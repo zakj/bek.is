@@ -1,0 +1,16 @@
+@require "util"
+
+body
+  background bg-color
+  color text-color
+  font 1em/1.5 font-stack
+  +breakpoint(375px)
+    font-size 1.1em
+  +breakpoint(750px)
+    font-size 1.25em
+
+*
+  box-sizing border-box
+
+a
+  cursor pointer

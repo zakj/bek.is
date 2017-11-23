@@ -1,0 +1,52 @@
+{
+  "name": "bek.is",
+  "author": "Zak Johnson <me@zakj.net>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "nuxt": "^1.0.0-rc11"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "caniuse-lite": "^1.0.30000769",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "root": true,
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "plugins": [
+      "html"
+    ],
+    "globals": {},
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "import/no-unresolved": "ignore",
+      "object-curly-spacing": [
+        "error",
+        "never"
+      ]
+    }
+  }
+}
