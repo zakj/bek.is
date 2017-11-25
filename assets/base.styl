@@ -1,5 +1,14 @@
 @require "util"
 
+@font-face
+  font-display swap
+  font-family Ultramagnetic
+  font-style normal
+  font-weight normal
+  src:
+    url('/fonts/ywft-ultramagnetic-light.woff') format('woff'),
+    url('/fonts/ywft-ultramagnetic-light.ttf') format('truetype')
+
 body
   background bg-color
   color text-color
@@ -8,6 +17,9 @@ body
     font-size 1.1em
   +breakpoint(750px)
     font-size 1.25em
+
+h1, h2, h3
+  font-family header-font-stack
 
 *
   box-sizing border-box

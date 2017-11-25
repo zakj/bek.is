@@ -1,3 +1,7 @@
+const PRELOAD_FONT_FILES = [
+  'ywft-ultramagnetic-light.woff',
+];
+
 module.exports = {
   build: {
     extend(config, ctx) {
@@ -23,6 +27,13 @@ module.exports = {
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      ...PRELOAD_FONT_FILES.map(filename => ({
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff',
+        crossorigin: '',
+        href: `/fonts/${filename}`,
+      })),
     ],
   },
 };

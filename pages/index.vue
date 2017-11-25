@@ -10,10 +10,9 @@ export default {
 <style lang="stylus" module>
   h1
     font-size 64px
-    letter-spacing 4px
-    line-height 100px
+    line-height 80px
     margin-bottom 0
-    margin-top -100px
+    margin-top -80px
     position absolute
     text-align center
     text-transform uppercase
