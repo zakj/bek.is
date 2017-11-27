@@ -49,4 +49,11 @@ module.exports = {
       })),
     ],
   },
+
+  loading: false,
+
+  plugins: [
+    '~/plugins/vue-in-view',
+    '~/plugins/vue-scrollto',
+  ],
 };

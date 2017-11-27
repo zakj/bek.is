@@ -11,8 +11,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "in-view": "^0.6.1",
     "normalize.css": "^7.0.0",
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.0.0-rc11",
+    "uniqid": "^4.1.1",
+    "vue-scrollto": "^2.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
