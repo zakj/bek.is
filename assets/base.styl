@@ -2,24 +2,41 @@
 
 @font-face
   font-display swap
-  font-family Ultramagnetic
+  font-family Tiempos Headline
+  font-style normal
+  font-weight bold
+  src:
+    url('/fonts/TiemposHeadlineWeb-Bold.woff2') format('woff2'),
+    url('/fonts/TiemposHeadlineWeb-Bold.woff') format('woff')
+
+@font-face
+  font-display swap
+  font-family Tiempos Text
   font-style normal
   font-weight normal
   src:
-    url('/fonts/ywft-ultramagnetic-light.woff') format('woff'),
-    url('/fonts/ywft-ultramagnetic-light.ttf') format('truetype')
+    url('/fonts/TiemposTextWeb-Regular.woff2') format('woff2'),
+    url('/fonts/TiemposTextWeb-Regular.woff') format('woff')
+
+@font-face
+  font-display swap
+  font-family Tiempos Text
+  font-style italic
+  font-weight normal
+  src:
+    url('/fonts/TiemposTextWeb-RegularItalic.woff2') format('woff2'),
+    url('/fonts/TiemposTextWeb-RegularItalic.woff') format('woff')
 
 body
+  text-body()
   background bg-color
   color text-color
-  font 1em/1.5 font-stack
-  +breakpoint(375px)
-    font-size 1.1em
-  +breakpoint(750px)
-    font-size 1.25em
 
-h1, h2, h3
-  font-family header-font-stack
+h1
+  text-h1()
+
+h2
+  text-h2()
 
 *
   box-sizing border-box

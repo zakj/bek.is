@@ -1,7 +1,9 @@
 const LINT_ON_BUILD = false;
 
 const PRELOAD_FONT_FILES = [
-  'ywft-ultramagnetic-light.woff',
+  'TiemposHeadlineWeb-Bold.woff2',
+  'TiemposTextWeb-Regular.woff2',
+  'TiemposTextWeb-RegularItalic.woff2',
 ];
 
 module.exports = {
