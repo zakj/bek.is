@@ -43,6 +43,15 @@
         "always-multiline"
       ],
       "import/no-unresolved": "ignore",
+      "import/no-extraneous-dependencies": "ignore",
+      "no-multi-spaces": [
+        "error",
+        {"ignoreEOLComments": true}
+      ],
+      "no-param-reassign": [
+        "error",
+        {"props": false}
+      ],
       "object-curly-spacing": [
         "error",
         "never"
