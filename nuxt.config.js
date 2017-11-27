@@ -1,11 +1,13 @@
+const LINT_ON_BUILD = false;
+
 const PRELOAD_FONT_FILES = [
   'ywft-ultramagnetic-light.woff',
 ];
 
 module.exports = {
   build: {
-    extend(config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+    extend(config, {dev, isClient}) {
+      if (LINT_ON_BUILD && dev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
