@@ -6,13 +6,13 @@ font-stack = Tiempos Text, helvetica-neue, sans-serif
 header-font-stack = Tiempos Headline, helvetica-neue, sans-serif
 
 
-// Shortcut for min-width media queries.
-breakpoint(w)
+// Shortcut for min-/max-width media queries.
+min-width(w)
   @media screen and (min-width: w)
     {block}
 
-mobile-only()
-  @media screen and (max-width: 767px)
+max-width(w)
+  @media screen and (max-width: w)
     {block}
 
 text-h1()
@@ -21,7 +21,7 @@ text-h1()
   font-weight bold
   line-height 36px
   text-decoration none
-  +breakpoint(768px)
+  +min-width(768px)
     font-size 64px
     line-height 64px
 
@@ -30,7 +30,7 @@ text-h2()
   font-size 24px
   font-weight bold
   line-height 28px
-  +breakpoint(768px)
+  +min-width(768px)
     font-size 36px
     line-height 40px
 
@@ -45,7 +45,7 @@ text-body()
   font-family font-stack
   font-size 16px
   line-height 20px
-  +breakpoint(768px)
+  +min-width(768px)
     font-size 24px
     line-height 28px
 
@@ -53,6 +53,6 @@ text-small()
   font-family font-stack
   font-size 12px
   line-height 20px
-  +breakpoint(768px)
+  +min-width(768px)
     font-size 16px
     line-height 24px

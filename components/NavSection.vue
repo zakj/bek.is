@@ -7,9 +7,10 @@
 
 <style lang="stylus" module>
   .section
-    min-height 600px
-    background #eee
-    outline 1px solid orange
+    min-height 400px  // XXX
+    padding 0 24px
+    padding-top 24px + 48px + 56px  // XXX spacer for logo
+    background #eee  // XXX
 </style>
 
 <script>
