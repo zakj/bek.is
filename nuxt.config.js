@@ -15,12 +15,23 @@ module.exports = {
           exclude: /(node_modules)/,
         });
       }
+
+      const vueLoader = config.module.rules.find(r => r.loader === 'vue-loader');
+      if (vueLoader) {
+        vueLoader.options = vueLoader.options || {};
+        vueLoader.options.cssModules = {
+          localIdentName: '[local]_[hash:base64:5]',
+          camelCase: true,
+        };
+      }
     },
   },
+
   css: [
     'normalize.css',
     {src: '~/assets/base.styl', lang: 'stylus'},
   ],
+
   head: {
     title: 'bek.is',
     meta: [
