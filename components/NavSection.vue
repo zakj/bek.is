@@ -32,6 +32,22 @@ export default {
     this.$store.commit('removeSection', this.name);
   },
 
+  watch: {
+    name(name, previousName) {
+      this.$store.commit('updateSection', {
+        name: previousName,
+        newValues: {name, label: this.label},
+      });
+    },
+
+    label(label) {
+      this.$store.commit('updateSection', {
+        name: this.name,
+        newValues: {name: this.name, label},
+      });
+    },
+  },
+
   props: {
     label: {
       required: true,

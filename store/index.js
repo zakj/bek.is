@@ -12,7 +12,14 @@ export default () => new Vuex.Store({
     },
 
     removeSection(state, name) {
-      state.navSections = state.navSections.filter(section => section.name !== name);
+      state.navSections = state.navSections.filter(x => x.name !== name);
+    },
+
+    updateSection(state, {name, newValues}) {
+      const section = state.navSections.find(x => x.name === name);
+      Object.keys(newValues).forEach((k) => {
+        section[k] = newValues[k];
+      });
     },
   },
 });
