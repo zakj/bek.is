@@ -5,14 +5,26 @@ salmon-color = #e5bbb1
 font-stack = Tiempos Text, helvetica-neue, sans-serif
 header-font-stack = Tiempos Headline, helvetica-neue, sans-serif
 
+logo-size = 56px
+mobile-padding = 24px
+tablet-padding = 48px
 
-// Shortcut for min-/max-width media queries.
-min-width(w)
+
+// Media query shortcuts. above/below are inclusive/exclusive.
+mobile = 375px
+tablet = 768px
+desktop = 1024px
+
+above(w)
   @media screen and (min-width: w)
     {block}
 
-max-width(w)
-  @media screen and (max-width: w)
+below(w)
+  @media screen and (max-width: w - 1)
+    {block}
+
+between(w1, w2)
+  @media screen and (min-width: w1) and (max-width: w2 - 1)
     {block}
 
 text-h1()
@@ -21,7 +33,7 @@ text-h1()
   font-weight bold
   line-height 36px
   text-decoration none
-  +min-width(768px)
+  +above(tablet)
     font-size 64px
     line-height 64px
 
@@ -30,7 +42,7 @@ text-h2()
   font-size 24px
   font-weight bold
   line-height 28px
-  +min-width(768px)
+  +above(tablet)
     font-size 36px
     line-height 40px
 
@@ -45,7 +57,7 @@ text-body()
   font-family font-stack
   font-size 16px
   line-height 20px
-  +min-width(768px)
+  +above(tablet)
     font-size 24px
     line-height 28px
 
@@ -53,6 +65,15 @@ text-small()
   font-family font-stack
   font-size 12px
   line-height 20px
-  +min-width(768px)
+  +above(tablet)
     font-size 16px
     line-height 24px
+
+nav-padding-size(page-padding)
+  page-padding + page-padding * 2 + logo-size
+
+nav-padding()
+  +below(tablet)
+    padding-top nav-padding-size(mobile-padding)
+  +above(tablet)
+    padding-top nav-padding-size(tablet-padding)

@@ -15,6 +15,7 @@
     "normalize.css": "^7.0.0",
     "nuxt": "^1.0.0-rc11",
     "uniqid": "^4.1.1",
+    "vue-marked": "^0.1.1",
     "vue-scrollto": "^2.8.0"
   },
   "devDependencies": {
@@ -49,11 +50,15 @@
       "import/no-extraneous-dependencies": "ignore",
       "no-multi-spaces": [
         "error",
-        {"ignoreEOLComments": true}
+        {
+          "ignoreEOLComments": true
+        }
       ],
       "no-param-reassign": [
         "error",
-        {"props": false}
+        {
+          "props": false
+        }
       ],
       "object-curly-spacing": [
         "error",

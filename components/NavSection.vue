@@ -1,27 +1,31 @@
 <template>
   <section :class="$style.section" :id="name"
     v-in-view:enter="scrollEnter" v-in-view:exit="scrollExit">
-    <slot />
+    <vue-marked><slot /></vue-marked>
   </section>
 </template>
 
 <style lang="stylus" module>
+  @require '~assets/util'
+
   .section
     min-height 400px  // XXX
-    padding 0 24px
-    padding-top 24px + 48px + 56px  // XXX spacer for logo
-    background #eee  // XXX
+    nav-padding()
 </style>
 
 <script>
+import VueMarked from 'vue-marked';
+
 export default {
+  components: {VueMarked},
+
   methods: {
     scrollEnter() {
-      console.log('entered', this.name);
+      // TODO: calculate currentNav somehow
     },
 
     scrollExit() {
-      console.log('exited', this.name);
+      // TODO: calculate currentNav somehow
     },
   },
 
