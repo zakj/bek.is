@@ -8,6 +8,7 @@ header-font-stack = Tiempos Headline, Georgia, serif
 logo-size = 56px
 mobile-padding = 24px
 tablet-padding = 48px
+desktop-padding = 96px
 
 
 // Media query shortcuts. above/below are inclusive/exclusive.
@@ -70,10 +71,15 @@ text-small()
     line-height 24px
 
 nav-padding-size(page-padding)
-  page-padding + page-padding * 2 + logo-size
+  if page-padding >= desktop-padding
+    desktop-padding
+  else
+    page-padding + page-padding * 2 + logo-size
 
 nav-padding()
   +below(tablet)
     padding-top nav-padding-size(mobile-padding)
   +above(tablet)
     padding-top nav-padding-size(tablet-padding)
+  +above(desktop)
+    padding-top nav-padding-size(desktop-padding)

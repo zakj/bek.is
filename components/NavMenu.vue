@@ -53,7 +53,7 @@
     +between(tablet, desktop)
       top tablet-padding
     +above(desktop)
-      top nav-padding-size(tablet-padding) + 8px
+      top nav-padding-size(desktop-padding) + 8px
     &:after
       position fixed
 
