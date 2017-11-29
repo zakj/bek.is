@@ -25,6 +25,23 @@
         content counter(section) "."
         counter-increment section
         display block
+
+  .section blockquote
+    margin 1em 0
+    position relative
+    text-h2()
+    & > p:first-of-type
+      &::before
+        content "“"
+        left -1em
+        position absolute
+        text-align right
+        width 1em
+    & > p:last-of-type
+      &::after
+        content "”"
+    +above(tablet)
+      max-width 60%
 </style>
 
 <script>

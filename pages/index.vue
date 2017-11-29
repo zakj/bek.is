@@ -10,6 +10,23 @@
       <NavSection name="method" label="Methodology" :numbered-headings="true">
       </NavSection>
 
+      <NavSection name="voices" label="Voices">
+        > Bek is one of those rare leaders that boldly balances hands-on
+        > relevancy with clear visioned execution.
+
+        subtext
+
+        > Green juice biodiesel synth, salvia roof party raw denim kombucha
+        > pickled kale.
+
+        subtext
+
+        > Heirloom authentic chambray pickled lomo. Hell of normcore pork
+        > belly.
+
+        subtext
+      </NavSection>
+
       <NavSection name="case-studies" label="Case Studies">
         here is the case studies section
       </NavSection>
