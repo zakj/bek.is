@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.body">
     <Container>
-      <NavSection name="bio" label="Bio">
+      <NavSection name="top" label="" :is-top="true">
         # Every step more humane than the last.
         [Trending Up](XXX)
 

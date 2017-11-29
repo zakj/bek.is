@@ -7,8 +7,8 @@ export default () => new Vuex.Store({
   },
 
   mutations: {
-    addSection(state, {name, label}) {
-      state.navSections.push({name, label});
+    addSection(state, {name, label, isTop}) {
+      state.navSections.push({name, label, isTop});
     },
 
     removeSection(state, name) {

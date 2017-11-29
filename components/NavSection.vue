@@ -30,7 +30,7 @@ export default {
   },
 
   mounted() {
-    this.$store.commit('addSection', {name: this.name, label: this.label});
+    this.$store.commit('addSection', {name: this.name, label: this.label, isTop: this.isTop});
   },
 
   destroyed() {
@@ -54,6 +54,10 @@ export default {
   },
 
   props: {
+    isTop: {
+      default: false,
+      type: Boolean,
+    },
     label: {
       required: true,
       type: String,

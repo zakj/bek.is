@@ -2,15 +2,17 @@
   <div :class="{[$style.open]: open}">
     <div :class="$style.overlay">
       <Container :class="$style.nav">
-        <a v-for="({name, label}) in navSections"
+        <a v-for="({name, label}) in mainSections"
           :class="{[$style.link]: true, [$style.current]: currentNav === name}"
           @click="open = false"
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
       </Container>
     </div>
     <Container :class="$style.logoToggle">
-      <div :class="$style.logo"></div>
-      <div :class="$style.toggle" @click="open = !open"></div>
+      <a :class="$style.logo" @click="open = false" v-if="topSection"
+        :href="`#${topSection.name}`" v-scroll-to="`#${topSection.name}`"></a>
+      <div :class="$style.logo" @click="open = false" v-else></div>
+      <a :class="$style.toggle" @click="open = !open"></a>
     </Container>
   </div>
 </template>
@@ -54,10 +56,10 @@
       top tablet-padding
     +above(desktop)
       top nav-padding-size(desktop-padding) + 8px
-    &:after
+    &::after
       position fixed
 
-  .logo:after
+  .logo::after
     // XXX placeholder
     background black
     border-radius logo-size
@@ -66,10 +68,10 @@
     height logo-size
     width logo-size
 
-  .toggle:after
+  .toggle::after
     display block
     content "☰"
-  .open .toggle:after
+  .open .toggle::after
     content "✖"
 
   .logo
@@ -101,7 +103,15 @@ import Container from '~/components/Container.vue';
 
 export default {
   components: {Container},
-  computed: mapState(['currentNav', 'navSections']),
+  computed: {
+    mainSections() {
+      return this.navSections.filter(x => !x.isTop);
+    },
+    topSection() {
+      return this.navSections.find(x => x.isTop);
+    },
+    ...mapState(['currentNav', 'navSections']),
+  },
 
   data: () => ({
     open: false,
