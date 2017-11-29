@@ -1,6 +1,7 @@
 <template>
-  <section :class="$style.section" :id="name"
-    v-in-view:enter="scrollEnter" v-in-view:exit="scrollExit">
+  <section :class="{[$style.section]: true, [$style.numberedHeadings]: numberedHeadings}"
+    :id="name" v-in-view:enter="scrollEnter" v-in-view:exit="scrollExit">
+    <div v-if="!isTop" :class="$style.label">{{label}}<br>/</div>
     <vue-marked><slot /></vue-marked>
   </section>
 </template>
@@ -11,6 +12,19 @@
   .section
     min-height 400px  // XXX
     nav-padding()
+
+  .label
+    text-h3()
+    margin-bottom 24px
+
+  .numbered-headings
+    counter-reset section
+
+    h1, h2
+      &::before
+        content counter(section) "."
+        counter-increment section
+        display block
 </style>
 
 <script>
@@ -65,6 +79,10 @@ export default {
     name: {
       required: true,
       type: String,
+    },
+    numberedHeadings: {
+      default: false,
+      type: Boolean,
     },
   },
 };

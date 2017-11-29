@@ -2,19 +2,12 @@
   <div :class="$style.body">
     <Container>
       <NavSection name="top" label="" :is-top="true">
-        # Every step more humane than the last.
-        [Trending Up](XXX)
-
-        some pictures
-
-        # With fire in these hands.
-        [Arms that Carry](XXX)
-
-        moar pictures
       </NavSection>
 
-      <NavSection name="method" label="Methodology">
-        here is the method section
+      <NavSection name="bio" label="Bio">
+      </NavSection>
+
+      <NavSection name="method" label="Methodology" :numbered-headings="true">
       </NavSection>
 
       <NavSection name="case-studies" label="Case Studies">
