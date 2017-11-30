@@ -11,6 +11,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "animejs": "^2.2.0",
     "in-view": "^0.6.1",
     "normalize.css": "^7.0.0",
     "nuxt": "^1.0.0-rc11",

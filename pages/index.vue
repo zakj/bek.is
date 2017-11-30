@@ -32,6 +32,7 @@
       </NavSection>
     </Container>
 
+    <Splash v-if="showSplash" />
     <NavMenu />
   </div>
 </template>
@@ -47,8 +48,21 @@
 import Container from '~/components/Container.vue';
 import NavMenu from '~/components/NavMenu.vue';
 import NavSection from '~/components/NavSection.vue';
+import Splash from '~/components/Splash.vue';
 
 export default {
-  components: {Container, NavMenu, NavSection},
+  components: {
+    Container,
+    NavMenu,
+    NavSection,
+    Splash,
+  },
+
+  created() {
+  },
+
+  data: () => ({
+    showSplash: true,
+  }),
 };
 </script>

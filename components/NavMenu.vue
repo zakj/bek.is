@@ -67,6 +67,9 @@
     display block
     height logo-size
     width logo-size
+    // XXX
+    animation 500ms 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 'bloop' forwards
+    transform scale(0)
 
   .toggle::after
     display block
@@ -95,6 +98,14 @@
       line-height 48px
     +above(tablet)
       line-height 80px
+</style>
+
+<style lang="stylus">
+  @keyframes bloop
+    from
+      transform scale(0)
+    to
+      transform scale(1)
 </style>
 
 <script>
