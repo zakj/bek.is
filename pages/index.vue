@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.body">
-    <Container>
+    <Container :class="{[$style.hidden]: loading}">
       <NavSection name="top" label="" :is-top="true">
       </NavSection>
 
@@ -32,7 +32,7 @@
       </NavSection>
     </Container>
 
-    <Splash v-if="showSplash" />
+    <Splash />
     <NavMenu />
   </div>
 </template>
@@ -42,9 +42,14 @@
   .body
     display flex
     flex-direction column-reverse
+
+  .hidden
+    visibility hidden
 </style>
 
 <script>
+import {mapState} from 'vuex';
+
 import Container from '~/components/Container.vue';
 import NavMenu from '~/components/NavMenu.vue';
 import NavSection from '~/components/NavSection.vue';
@@ -58,11 +63,6 @@ export default {
     Splash,
   },
 
-  created() {
-  },
-
-  data: () => ({
-    showSplash: true,
-  }),
+  computed: mapState(['loading']),
 };
 </script>

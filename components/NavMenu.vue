@@ -9,10 +9,14 @@
       </Container>
     </div>
     <Container :class="$style.logoToggle">
-      <a :class="$style.logo" @click="open = false" v-if="topSection"
-        :href="`#${topSection.name}`" v-scroll-to="`#${topSection.name}`"></a>
-      <div :class="$style.logo" @click="open = false" v-else></div>
-      <a :class="$style.toggle" @click="open = !open"></a>
+        <a :class="$style.logo" @click="open = false"
+          :href="`#${topSection ? topSection.name : 'top'}`"
+          v-scroll-to="topSection ? `#${topSection.name}` : `body`">
+          <transition appear v-on:enter="bloop"><div></div></transition>
+        </a>
+        <a :class="$style.toggle" @click="open = !open" v-if="!loading">
+          <transition appear v-on:enter="fadeIn"><div>{{ open ? `✖` : `☰` }}</div></transition>
+        </a>
     </Container>
   </div>
 </template>
@@ -56,26 +60,18 @@
       top tablet-padding
     +above(desktop)
       top nav-padding-size(desktop-padding) + 8px
-    &::after
+    div
       position fixed
 
-  .logo::after
+  .logo div
     // XXX placeholder
     background black
     border-radius logo-size
     content ""
     display block
     height logo-size
-    width logo-size
-    // XXX
-    animation 500ms 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 'bloop' forwards
     transform scale(0)
-
-  .toggle::after
-    display block
-    content "☰"
-  .open .toggle::after
-    content "✖"
+    width logo-size
 
   .logo
     +below(tablet)
@@ -100,20 +96,14 @@
       line-height 80px
 </style>
 
-<style lang="stylus">
-  @keyframes bloop
-    from
-      transform scale(0)
-    to
-      transform scale(1)
-</style>
-
 <script>
+import anime from 'animejs';
 import {mapState} from 'vuex';
 import Container from '~/components/Container.vue';
 
 export default {
   components: {Container},
+
   computed: {
     mainSections() {
       return this.navSections.filter(x => !x.isTop);
@@ -121,11 +111,33 @@ export default {
     topSection() {
       return this.navSections.find(x => x.isTop);
     },
-    ...mapState(['currentNav', 'navSections']),
+    ...mapState(['currentNav', 'navSections', 'loading']),
   },
 
   data: () => ({
     open: false,
   }),
+
+  methods: {
+    bloop(el, done) {
+      anime({
+        targets: el,
+        scale: [0, 1],
+        complete: done,
+        delay: 400,
+        duration: 900,
+      });
+    },
+
+    fadeIn(el, done) {
+      anime({
+        targets: el,
+        opacity: [0, 1],
+        complete: done,
+        delay: 400,
+        duration: 500,
+      });
+    },
+  },
 };
 </script>

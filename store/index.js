@@ -4,6 +4,7 @@ export default () => new Vuex.Store({
   state: {
     currentNav: null,
     navSections: [],
+    loading: true,
   },
 
   mutations: {
@@ -20,6 +21,10 @@ export default () => new Vuex.Store({
       Object.keys(newValues).forEach((k) => {
         section[k] = newValues[k];
       });
+    },
+
+    finishLoading(state) {
+      state.loading = false;
     },
   },
 });
