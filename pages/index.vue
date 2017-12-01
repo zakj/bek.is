@@ -10,6 +10,10 @@
       <NavSection name="method" label="Methodology" :numbered-headings="true">
       </NavSection>
 
+      <NavSection name="case-studies" label="Case Studies">
+        here is the case studies section
+      </NavSection>
+
       <NavSection name="voices" label="Voices">
         > Bek is one of those rare leaders that boldly balances hands-on
         > relevancy with clear visioned execution.
@@ -25,10 +29,6 @@
         > belly.
 
         subtext
-      </NavSection>
-
-      <NavSection name="case-studies" label="Case Studies">
-        here is the case studies section
       </NavSection>
 
       <NavSection name="" label="Connect" :nav-hidden="true">
