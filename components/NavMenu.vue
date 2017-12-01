@@ -6,6 +6,18 @@
           :class="{[$style.link]: true, [$style.current]: currentNav === name}"
           @click="open = false"
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
+        <div :class="$style.contact">
+          <p>
+            <a href="mailto:holler@bek.is">Email</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/bekstone/">LinkedIn</a>
+            <span>·</span>
+            <a href="https://www.instagram.com/saintbek/">@saintbek</a>
+          </p>
+          <p>
+            Site magic by <a href="https://zakj.net/">@zakj</a>
+          </p>
+        </div>
       </Container>
     </div>
     <Container :class="$style.logoToggle">
@@ -94,6 +106,15 @@
       line-height 48px
     +above(tablet)
       line-height 80px
+
+  .contact
+    text-small()
+    span
+      margin 0 1em
+    +below(tablet)
+      margin-top 24px
+    +above(tablet)
+      margin-top 48px
 </style>
 
 <script>

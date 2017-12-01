@@ -10,8 +10,9 @@
   @require '~assets/util'
 
   .section
-    min-height 400px  // XXX
     nav-padding()
+    &:last-child
+      min-height 100vh
 
   .label
     text-h3()
@@ -61,6 +62,7 @@ export default {
   },
 
   mounted() {
+    if (this.navHidden) return;
     this.$store.commit('addSection', {name: this.name, label: this.label, isTop: this.isTop});
   },
 
@@ -70,6 +72,7 @@ export default {
 
   watch: {
     name(name, previousName) {
+      if (this.navHidden) return;
       this.$store.commit('updateSection', {
         name: previousName,
         newValues: {name, label: this.label},
@@ -77,6 +80,7 @@ export default {
     },
 
     label(label) {
+      if (this.navHidden) return;
       this.$store.commit('updateSection', {
         name: this.name,
         newValues: {name: this.name, label},
@@ -96,6 +100,10 @@ export default {
     name: {
       required: true,
       type: String,
+    },
+    navHidden: {
+      default: false,
+      type: Boolean,
     },
     numberedHeadings: {
       default: false,

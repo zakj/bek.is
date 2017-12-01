@@ -10,9 +10,9 @@
     margin 0 auto
     max-width desktop
     +below(tablet)
-      padding 0 mobile-padding mobile-padding
+      padding 0 mobile-padding
     +above(tablet)
-      padding 0 tablet-padding tablet-padding
+      padding 0 tablet-padding
     +above(desktop)
       padding-left tablet-padding + logo-size + tablet-padding
 </style>

@@ -30,6 +30,17 @@
       <NavSection name="case-studies" label="Case Studies">
         here is the case studies section
       </NavSection>
+
+      <NavSection name="" label="Connect" :nav-hidden="true">
+        # In the wild
+
+        [Email](mailto:holler@bek.is)  
+        [LinkedIn](https://www.linkedin.com/in/bekstone/)  
+        [Twitter](https://twitter.com/saintbek)  
+        [Instagram](https://www.instagram.com/saintbek/)  
+
+        Site magic by [@zakj](https://zakj.net/)
+      </NavSection>
     </Container>
 
     <Splash />
