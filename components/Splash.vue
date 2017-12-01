@@ -1,5 +1,6 @@
 <template>
-  <svg :class="$style.splash" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none"
+    :class="$style.splash" v-if="visible">
     <polygon ref="svg" points="0,0 100,0 100,0 0,0" />
   </svg>
 </template>
@@ -21,6 +22,10 @@ import {mapMutations} from 'vuex';
 import anime from 'animejs';
 
 export default {
+  data: () => ({
+    visible: true,
+  }),
+
   methods: mapMutations(['finishLoading']),
 
   mounted() {
@@ -48,6 +53,9 @@ export default {
           {value: '0,100  100,100  100,50 0,48'},
           {value: '0,100  100,100  100,100 0,100'},
         ],
+        complete: () => {
+          this.visible = false;
+        },
       });
   },
 };
