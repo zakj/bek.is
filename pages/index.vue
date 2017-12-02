@@ -91,6 +91,7 @@
 import {mapMutations, mapState} from 'vuex';
 
 import Container from '~/components/Container.vue';
+import ImageViewer from '~/components/ImageViewer.vue';
 import MoodImage from '~/components/MoodImage.vue';
 import MoodSet from '~/components/MoodSet.vue';
 import NavMenu from '~/components/NavMenu.vue';
@@ -100,6 +101,7 @@ import Splash from '~/components/Splash.vue';
 export default {
   components: {
     Container,
+    ImageViewer,
     MoodImage,
     MoodSet,
     NavMenu,
