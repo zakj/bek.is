@@ -8,27 +8,27 @@
           <div slot="left">
             <!-- offset is a percentage of the width of the column. -->
             <MoodImage :scroll-at="1.2"
-              src="/mood/L-1.jpg" />
+              src="/mood/BekStone.jpg" />
             <MoodImage :offset="-14" :scroll-at="1.2"
-              src="/mood/L-2.jpg" />
+              src="/mood/V7.jpg" />
             <MoodImage :offset="80" :scroll-at="1.2"
-              src="/mood/L-3.jpg" />
-            <MoodImage :offset="-14" :scroll-at="1.2"
-              src="/mood/L-4.jpg" />
+              src="/mood/Agave.jpg" />
+            <MoodImage :offset="40" :scroll-at=".9"
+              src="/mood/Soiled.jpg" />
           </div>
           <div slot="right">
             <MoodImage :offset="60"
-              src="/mood/R-1.jpg" />
+              src="/mood/Cabin.jpg" />
             <MoodImage orientation="landscape" size="small"
-              src="/mood/R-2.jpg" />
+              src="/mood/Blocky.png" />
             <MoodImage orientation="landscape"
-              src="/mood/R-3.jpg" />
+              src="/mood/Wing.jpg" />
             <MoodImage :scroll-at=".8"
-              src="/mood/R-4.jpg" />
+              src="/mood/Clippings.jpg" />
             <MoodImage orientation="landscape" :offset="20"
-              src="/mood/R-5.jpg" />
+              src="/mood/ZakJohnson-BekStone.jpg" />
             <MoodImage orientation="landscape" size="small"
-              src="/mood/R-6.png" />
+              src="/mood/Saintbek.png" />
           </div>
         </MoodSet>
       </NavSection>
