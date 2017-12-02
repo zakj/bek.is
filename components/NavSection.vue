@@ -2,7 +2,8 @@
   <section :class="{[$style.section]: true, [$style.numberedHeadings]: numberedHeadings}"
     :id="name" v-in-view:enter="scrollEnter" v-in-view:exit="scrollExit">
     <div v-if="!isTop" :class="$style.label">{{label}}<br>/</div>
-    <vue-marked><slot /></vue-marked>
+    <vue-marked v-if="markdown"><slot /></vue-marked>
+    <slot v-else />
   </section>
 </template>
 
@@ -107,6 +108,10 @@ export default {
     },
     numberedHeadings: {
       default: false,
+      type: Boolean,
+    },
+    markdown: {
+      default: true,
       type: Boolean,
     },
   },

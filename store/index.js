@@ -5,6 +5,7 @@ export default () => new Vuex.Store({
     currentNav: null,
     navSections: [],
     loading: true,
+    scrollY: 0,
   },
 
   mutations: {
@@ -21,6 +22,10 @@ export default () => new Vuex.Store({
       Object.keys(newValues).forEach((k) => {
         section[k] = newValues[k];
       });
+    },
+
+    setScrollY(state, value) {
+      state.scrollY = value;
     },
 
     finishLoading(state) {
