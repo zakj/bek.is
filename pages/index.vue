@@ -63,7 +63,7 @@
       <NavSection name="" label="Connect" :nav-hidden="true">
         # In the wild
 
-        [Email](mailto:holler@bek.is)  
+        [Email](mailto:findbek@gmail.com)  
         [LinkedIn](https://www.linkedin.com/in/bekstone/)  
         [Twitter](https://twitter.com/saintbek)  
         [Instagram](https://www.instagram.com/saintbek/)  

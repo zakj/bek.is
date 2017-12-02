@@ -8,7 +8,7 @@
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
         <div :class="$style.contact">
           <p>
-            <a href="mailto:holler@bek.is">Email</a>
+            <a href="mailto:findbek@gmail.com">Email</a>
             <span>·</span>
             <a href="https://www.linkedin.com/in/bekstone/">LinkedIn</a>
             <span>·</span>
