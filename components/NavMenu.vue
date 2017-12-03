@@ -13,7 +13,7 @@
         <a :class="$style.logo" @click="open = false"
           :href="`#${topSection ? topSection.name : 'top'}`"
           v-scroll-to="topSection ? `#${topSection.name}` : `body`">
-          <transition appear v-on:enter="bloop"><div></div></transition>
+          <transition appear v-on:enter="bloop"><Mark /></transition>
         </a>
         <a :class="$style.toggle" @click="open = !open" v-if="!loading">
           <transition appear v-on:enter="fadeIn"><div>{{ open ? `✖` : `☰` }}</div></transition>
@@ -64,21 +64,20 @@
     div
       position fixed
 
-  .logo div
-    // XXX placeholder
-    background black
-    border-radius logo-size
-    content ""
-    display block
-    height logo-size
-    transform scale(0)
-    width logo-size
-
   .logo
     +below(tablet)
       left mobile-padding
     +above(tablet)
       left tablet-padding
+    svg
+      background black
+      border-radius logo-size
+      fill #fff
+      height logo-size
+      transform scale(0)
+      width logo-size
+      .open &
+        fill salmon-color
 
   .toggle
     width 15px  // XXX placeholder
@@ -105,9 +104,10 @@ import anime from 'animejs';
 import {mapState} from 'vuex';
 import Contact from '~/components/Contact.vue';
 import Container from '~/components/Container.vue';
+import Mark from '~/assets/icons/mark.svg';
 
 export default {
-  components: {Contact, Container},
+  components: {Contact, Container, Mark},
 
   computed: {
     mainSections() {

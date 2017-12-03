@@ -28,7 +28,8 @@
     "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-import": "^2.8.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^3.0.1",
+    "vue-svg-loader": "^0.4.0"
   },
   "eslintConfig": {
     "extends": "airbnb-base",

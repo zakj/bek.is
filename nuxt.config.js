@@ -6,6 +6,10 @@ const PRELOAD_FONT_FILES = [
   'TiemposTextWeb-RegularItalic.woff2',
 ];
 
+function findLoader(config, name) {
+  return config.module.rules.find(r => r.loader === name);
+}
+
 module.exports = {
   build: {
     extend(config, {dev, isClient}) {
@@ -18,7 +22,7 @@ module.exports = {
         });
       }
 
-      const vueLoader = config.module.rules.find(r => r.loader === 'vue-loader');
+      const vueLoader = findLoader(config, 'vue-loader');
       if (vueLoader) {
         vueLoader.options = vueLoader.options || {};
         vueLoader.options.cssModules = {
@@ -26,6 +30,17 @@ module.exports = {
           camelCase: true,
         };
       }
+
+      // Remove svg from url-loader, in favor of vue-svg-loader.
+      const urlLoader = findLoader(config, 'url-loader');
+      if (urlLoader) {
+        urlLoader.test = /\.(png|jpe?g|gif)$/;
+      }
+
+      config.module.rules.push({
+        test: /\.svg$/,
+        loader: 'vue-svg-loader',
+      });
     },
   },
 
