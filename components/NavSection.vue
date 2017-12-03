@@ -29,9 +29,12 @@
         display block
 
   .section blockquote
-    margin 1em 0
+    margin 0
     position relative
     text-h2()
+    +below(tablet)
+      &:not(:first-of-type)
+        margin-top 2em
     & > p:first-of-type
       &::before
         content "“"
@@ -40,10 +43,19 @@
         text-align right
         width 1em
     & > p:last-of-type
+      margin-bottom 0
       &::after
         content "”"
+    & + p
+      text-small()
     +above(tablet)
-      max-width 60%
+      max-width 15em
+
+  .section p
+    max-width 30em
+
+  .section em
+    letter-spacing -0.3px
 </style>
 
 <script>

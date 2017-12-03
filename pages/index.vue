@@ -2,7 +2,7 @@
   <div :class="$style.body">
     <Container :class="{[$style.hidden]: loading}">
       <NavSection name="top" label="" :is-top="true" :markdown="false">
-        <h1>Every step more humane than the last.</h1>
+        <h1>Every step<br>more humane<br>than the last.</h1>
 
         <MoodSet>
           <div slot="left">
@@ -47,17 +47,20 @@
         > Bek is one of those rare leaders that boldly balances hands-on
         > relevancy with clear visioned execution.
 
-        subtext
+        [Rachel Holbrook](some link)  
+        *Global Head of Production, Airbnb*
 
         > Green juice biodiesel synth, salvia roof party raw denim kombucha
         > pickled kale.
 
-        subtext
+        [Katie Dill](some link)  
+        *VP of Design, Lyft*
 
         > Heirloom authentic chambray pickled lomo. Hell of normcore pork
         > belly.
 
-        subtext
+        [Peter Giorgi](some link)  
+        *CMO, Celebrity Cruises*
       </NavSection>
 
       <NavSection name="" label="Connect" :nav-hidden="true">

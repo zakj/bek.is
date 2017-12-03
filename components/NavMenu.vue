@@ -54,9 +54,9 @@
     nav-padding()
     // Correct for differing line-heights.
     +below(tablet)
-      margin-top -6px
+      margin-top -5px
     +above(tablet)
-      margin-top -8px
+      margin-top -6px
 
   // .logo/.toggle are fixed, but positioned relative to the page container. We
   // absolutely position them inside a relative parent and create a child
@@ -103,9 +103,12 @@
     color text-color
     display block
     +below(tablet)
-      line-height 48px
+      line-height 54px
     +above(tablet)
       line-height 80px
+
+  .nav a:hover
+    color text-color
 
   .contact
     text-small()
