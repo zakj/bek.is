@@ -63,15 +63,8 @@
         *CMO, Celebrity Cruises*
       </NavSection>
 
-      <NavSection name="" label="Connect" :nav-hidden="true">
-        # In the wild
-
-        [Email](mailto:findbek@gmail.com)  
-        [LinkedIn](https://www.linkedin.com/in/bekstone/)  
-        [Twitter](https://twitter.com/saintbek)  
-        [Instagram](https://www.instagram.com/saintbek/)  
-
-        Site magic by [@zakj](https://zakj.net/)
+      <NavSection name="" label="Connect" :nav-hidden="true" :markdown="false">
+        <Contact />
       </NavSection>
     </Container>
 
@@ -93,6 +86,7 @@
 <script>
 import {mapMutations, mapState} from 'vuex';
 
+import Contact from '~/components/Contact.vue';
 import Container from '~/components/Container.vue';
 import ImageViewer from '~/components/ImageViewer.vue';
 import MoodImage from '~/components/MoodImage.vue';
@@ -103,6 +97,7 @@ import Splash from '~/components/Splash.vue';
 
 export default {
   components: {
+    Contact,
     Container,
     ImageViewer,
     MoodImage,

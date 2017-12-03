@@ -6,18 +6,7 @@
           :class="{[$style.link]: true, [$style.current]: currentNav === name}"
           @click="open = false"
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
-        <div :class="$style.contact">
-          <p>
-            <a href="mailto:findbek@gmail.com">Email</a>
-            <span>·</span>
-            <a href="https://www.linkedin.com/in/bekstone/">LinkedIn</a>
-            <span>·</span>
-            <a href="https://www.instagram.com/saintbek/">@saintbek</a>
-          </p>
-          <p>
-            Site magic by <a href="https://zakj.net/">@zakj</a>
-          </p>
-        </div>
+        <Contact />
       </Container>
     </div>
     <Container :class="$style.logoToggle">
@@ -109,24 +98,16 @@
 
   .nav a:hover
     color text-color
-
-  .contact
-    text-small()
-    span
-      margin 0 1em
-    +below(tablet)
-      margin-top 24px
-    +above(tablet)
-      margin-top 48px
 </style>
 
 <script>
 import anime from 'animejs';
 import {mapState} from 'vuex';
+import Contact from '~/components/Contact.vue';
 import Container from '~/components/Container.vue';
 
 export default {
-  components: {Container},
+  components: {Contact, Container},
 
   computed: {
     mainSections() {
