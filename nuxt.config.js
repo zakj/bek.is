@@ -58,6 +58,13 @@ module.exports = {
     {src: '~/assets/base.styl', lang: 'stylus'},
   ],
 
+  generate: {
+    minify: {
+      // TODO: this is breaking SVG styling. see if there's a smaller hammer
+      minifyCSS: false,
+    },
+  },
+
   head: {
     title: 'Bek Stone',
     meta: [

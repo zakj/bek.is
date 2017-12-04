@@ -10,16 +10,16 @@
       </Container>
     </div>
     <Container :class="$style.logoToggle">
-        <a :class="$style.logo" @click="open = false"
-          :href="`#${topSection ? topSection.name : 'top'}`"
-          v-scroll-to="topSection ? `#${topSection.name}` : `body`">
-          <transition appear v-on:enter="bloop">
-            <MarkIcon :class="{[$style.filled]: !(open || splashVisible)}" />
-          </transition>
-        </a>
-        <a :class="$style.toggle" @click="open = !open" v-if="!splashVisible">
-          <MenuIcon ref="menu" />
-        </a>
+      <a :class="$style.logo" @click="open = false"
+        :href="`#${topSection ? topSection.name : 'top'}`"
+        v-scroll-to="topSection ? `#${topSection.name}` : `body`">
+        <transition appear v-on:enter="bloop">
+          <MarkIcon :class="{[$style.filled]: !(open || splashVisible)}" />
+        </transition>
+      </a>
+      <a :class="$style.toggle" @click="open = !open" v-show="!splashVisible">
+        <MenuIcon ref="menu" />
+      </a>
     </Container>
   </div>
 </template>
