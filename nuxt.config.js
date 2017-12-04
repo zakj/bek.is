@@ -40,6 +40,15 @@ module.exports = {
       config.module.rules.push({
         test: /\.svg$/,
         loader: 'vue-svg-loader',
+        options: {
+          svgo: {
+            plugins: [
+              {cleanupIDs: false},
+              {collapseGroups: false},
+              {convertShapeToPath: false},
+            ],
+          },
+        },
       });
     },
   },

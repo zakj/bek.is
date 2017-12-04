@@ -1,6 +1,6 @@
 <template>
-  <section :class="{[$style.section]: true, [$style.numberedHeadings]: numberedHeadings}"
-    :id="name" v-in-view:enter="scrollEnter" v-in-view:exit="scrollExit">
+  <section :id="name"
+    :class="[$style.section, {[$style.numberedHeadings]: numberedHeadings}]">
     <div v-if="!isTop" :class="$style.label">{{label}}<br>/</div>
     <vue-marked v-if="markdown"><slot /></vue-marked>
     <slot v-else />
@@ -63,16 +63,6 @@ import VueMarked from 'vue-marked';
 
 export default {
   components: {VueMarked},
-
-  methods: {
-    scrollEnter() {
-      // TODO: calculate currentNav somehow
-    },
-
-    scrollExit() {
-      // TODO: calculate currentNav somehow
-    },
-  },
 
   mounted() {
     if (this.navHidden) return;

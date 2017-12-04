@@ -13,10 +13,10 @@
         <a :class="$style.logo" @click="open = false"
           :href="`#${topSection ? topSection.name : 'top'}`"
           v-scroll-to="topSection ? `#${topSection.name}` : `body`">
-          <transition appear v-on:enter="bloop"><Mark /></transition>
+          <transition appear v-on:enter="bloop"><MarkIcon /></transition>
         </a>
         <a :class="$style.toggle" @click="open = !open" v-if="!loading">
-          <transition appear v-on:enter="fadeIn"><div>{{ open ? `✖` : `☰` }}</div></transition>
+          <MenuIcon ref="menu" />
         </a>
     </Container>
   </div>
@@ -55,13 +55,14 @@
     position relative
   .logo, .toggle
     position absolute
+    -webkit-tap-highlight-color transparent
     +below(tablet)
       top mobile-padding
     +between(tablet, desktop)
       top tablet-padding
     +above(desktop)
       top nav-padding-size(desktop-padding) + 8px
-    div
+    svg
       position fixed
 
   .logo
@@ -80,16 +81,40 @@
         fill salmon-color
 
   .toggle
-    width 15px  // XXX placeholder
+    width 20px
     +below(tablet)
       right mobile-padding
     +above(tablet)
       right tablet-padding
+    svg
+      // A little extra padding for click-target size.
+      box-sizing content-box
+      margin-left -10px
+      padding 10px
+      rect
+        transform-origin center 10.5px  // Safari/FF treat center differently
+      g
+        transition transform 100ms ease-in
+        transform translateY(0)  // Safari bug
+      &:hover
+        :global #menu-bar-1
+          transform translateY(-1px)
+        :global #menu-bar-3
+          transform translateY(1px)
+      .open &:hover
+        :global #menu-bar-1, :global #menu-bar-3
+          transform translateY(0)
+        rect
+          x -1
+          width 22px
 
   .link
     text-h1()
     color text-color
-    display block
+    &::after
+      // Break after each element, but don't expand the click area.
+      content ""
+      display block
     +below(tablet)
       line-height 54px
     +above(tablet)
@@ -102,12 +127,19 @@
 <script>
 import anime from 'animejs';
 import {mapState} from 'vuex';
+
 import Contact from '~/components/Contact.vue';
 import Container from '~/components/Container.vue';
-import Mark from '~/assets/icons/mark.svg';
+import MarkIcon from '~/assets/icons/mark.svg';
+import MenuIcon from '~/assets/icons/menu.svg';
 
 export default {
-  components: {Contact, Container, Mark},
+  components: {
+    Contact,
+    Container,
+    MarkIcon,
+    MenuIcon,
+  },
 
   computed: {
     mainSections() {
@@ -120,6 +152,7 @@ export default {
   },
 
   data: () => ({
+    animation: null,
     open: false,
   }),
 
@@ -133,15 +166,52 @@ export default {
         duration: 900,
       });
     },
+  },
 
-    fadeIn(el, done) {
-      anime({
-        targets: el,
-        opacity: [0, 1],
-        complete: done,
-        delay: 400,
-        duration: 500,
-      });
+  watch: {
+    open() {
+      if (this.animation) {
+        this.animation.reverse();
+        this.animation.play();
+        return;
+      }
+
+      const menuEl = this.$refs.menu.$el;
+      const duration = 100;
+      const bars = [1, 2, 3].map(i => menuEl.querySelector(`#menu-bar-${i} rect`));
+
+      this.animation = anime.timeline({
+        duration,
+        easing: 'easeInQuad',
+      })
+        .add({
+          targets: bars[0],
+          y: [4, 9],
+          offset: 0,
+        })
+        .add({
+          targets: bars[2],
+          y: [14, 9],
+          offset: 0,
+        })
+        .add({
+          targets: bars[1],
+          duration: 1,
+          opacity: [1, 0],
+          offset: '-=0',
+        })
+        .add({
+          targets: bars[0],
+          y: 9,
+          rotateZ: [0, '45deg'],
+          offset: duration * 1.5,
+        })
+        .add({
+          targets: bars[2],
+          y: 9,
+          rotateZ: [0, '-45deg'],
+          offset: duration * 1.5,
+        });
     },
   },
 };
