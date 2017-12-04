@@ -1,6 +1,6 @@
 <template>
   <svg viewBox="0 0 100 100" preserveAspectRatio="none"
-    :class="$style.splash" v-if="visible">
+    :class="$style.splash" v-if="splashVisible">
     <polygon ref="svg" points="0,0 100,0 100,0 0,0" />
   </svg>
 </template>
@@ -18,15 +18,12 @@
 </style>
 
 <script>
-import {mapMutations} from 'vuex';
+import {mapMutations, mapState} from 'vuex';
 import anime from 'animejs';
 
 export default {
-  data: () => ({
-    visible: true,
-  }),
-
-  methods: mapMutations(['finishLoading']),
+  computed: mapState(['splashVisible']),
+  methods: mapMutations(['finishLoading', 'hideSplash']),
 
   mounted() {
     anime.timeline({
@@ -53,9 +50,7 @@ export default {
           {value: '0,100  100,100  100,50 0,48'},
           {value: '0,100  100,100  100,100 0,100'},
         ],
-        complete: () => {
-          this.visible = false;
-        },
+        complete: this.hideSplash,
       });
   },
 };

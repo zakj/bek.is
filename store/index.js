@@ -2,10 +2,10 @@ import Vuex from 'vuex';
 
 export default () => new Vuex.Store({
   state: {
-    currentNav: null,
     loading: true,
     navSections: [],
     scrollY: 0,
+    splashVisible: true,
   },
 
   mutations: {
@@ -30,6 +30,10 @@ export default () => new Vuex.Store({
 
     finishLoading(state) {
       state.loading = false;
+    },
+
+    hideSplash(state) {
+      state.splashVisible = false;
     },
   },
 });

@@ -3,7 +3,7 @@
     <div :class="$style.overlay">
       <Container :class="$style.nav">
         <a v-for="({name, label}) in mainSections"
-          :class="{[$style.link]: true, [$style.current]: currentNav === name}"
+          :class="$style.link"
           @click="open = false"
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
         <Contact />
@@ -13,9 +13,11 @@
         <a :class="$style.logo" @click="open = false"
           :href="`#${topSection ? topSection.name : 'top'}`"
           v-scroll-to="topSection ? `#${topSection.name}` : `body`">
-          <transition appear v-on:enter="bloop"><MarkIcon /></transition>
+          <transition appear v-on:enter="bloop">
+            <MarkIcon :class="{[$style.filled]: !(open || splashVisible)}" />
+          </transition>
         </a>
-        <a :class="$style.toggle" @click="open = !open" v-if="!loading">
+        <a :class="$style.toggle" @click="open = !open" v-if="!splashVisible">
           <MenuIcon ref="menu" />
         </a>
     </Container>
@@ -71,14 +73,11 @@
     +above(tablet)
       left tablet-padding
     svg
-      background black
-      border-radius logo-size
-      fill #fff
       height logo-size
       transform scale(0)
       width logo-size
-      .open &
-        fill salmon-color
+      &.filled :global #mark-background
+        fill bg-color
 
   .toggle
     width 20px
@@ -148,7 +147,7 @@ export default {
     topSection() {
       return this.navSections.find(x => x.isTop);
     },
-    ...mapState(['currentNav', 'navSections', 'loading']),
+    ...mapState(['navSections', 'splashVisible']),
   },
 
   data: () => ({
