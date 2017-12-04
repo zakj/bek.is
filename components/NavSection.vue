@@ -2,8 +2,7 @@
   <section :id="name"
     :class="[$style.section, {[$style.numberedHeadings]: numberedHeadings}]">
     <div v-if="!isTop" :class="$style.label">{{label}}<br>/</div>
-    <vue-marked v-if="markdown"><slot /></vue-marked>
-    <slot v-else />
+    <slot />
   </section>
 </template>
 
@@ -59,11 +58,8 @@
 </style>
 
 <script>
-import VueMarked from 'vue-marked';
 
 export default {
-  components: {VueMarked},
-
   mounted() {
     if (this.navHidden) return;
     this.$store.commit('addSection', {name: this.name, label: this.label, isTop: this.isTop});
@@ -110,10 +106,6 @@ export default {
     },
     numberedHeadings: {
       default: false,
-      type: Boolean,
-    },
-    markdown: {
-      default: true,
       type: Boolean,
     },
   },
