@@ -10,31 +10,23 @@
 </template>
 
 <style lang="stylus" module>
+  @require '~assets/util'
+
   .image
     background-position center
     background-size cover
-    &::before
-      content ""
-      display block
 
-  .portrait.large::before
-    padding-top (4/3) * 100%
   .portrait.large
+    size-ratio(3, 4)
     width 110%
-
-  .landscape.large::before
-    padding-top (3/4) * 100%
   .landscape.large
+    size-ratio(4, 3)
     width 130%
-
-  .portrait.small::before
-    padding-top (3/2) * 100%
   .portrait.small
+    size-ratio(2, 3)
     width 50%
-
-  .landscape.small::before
-    padding-top (2/3) * 100%
   .landscape.small
+    size-ratio(3, 2)
     width 90%
 </style>
 

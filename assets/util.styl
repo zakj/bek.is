@@ -79,6 +79,12 @@ nav-padding-size(page-padding)
   else
     page-padding + page-padding * 2 + logo-size
 
+size-ratio(w, h)
+  &::before
+    content ""
+    display block
+    padding-top (h/w) * 100%
+
 nav-padding()
   +below(tablet)
     padding-top nav-padding-size(mobile-padding)

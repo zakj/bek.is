@@ -17,10 +17,7 @@
       margin 0 (mobile-padding * -1)
 
   .container, .image
-    &::before
-      content ""
-      display block
-      padding-top (2/3) * 100%
+    size-ratio(16, 9)
 
   .image
     background-position center
