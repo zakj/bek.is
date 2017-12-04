@@ -170,6 +170,7 @@ export default {
 
   watch: {
     open() {
+      document.body.classList.toggle('nav-open', this.open);
       if (this.animation) {
         this.animation.reverse();
         this.animation.play();
