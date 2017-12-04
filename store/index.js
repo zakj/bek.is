@@ -3,8 +3,8 @@ import Vuex from 'vuex';
 export default () => new Vuex.Store({
   state: {
     currentNav: null,
-    navSections: [],
     loading: true,
+    navSections: [],
     scrollY: 0,
   },
 
