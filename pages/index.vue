@@ -147,7 +147,7 @@
     visibility hidden
 
   .top-mood-set
-    padding-bottom 80px
+    padding-bottom 90px
 </style>
 
 <script>

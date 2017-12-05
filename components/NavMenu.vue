@@ -29,27 +29,16 @@
 <style lang="stylus" module>
   @require '~assets/util'
 
-  .nav, .overlay
-    display none
-    .open &
-      display block
-
   .overlay
     background salmon-color
     bottom 0
+    display none
     left 0
     position fixed
     right 0
     top 0
-
-  // Including .overlay for overriding .container padding. :/
-  .overlay .nav
-    nav-padding()
-    // Correct for differing line-heights.
-    +below(tablet)
-      margin-top -5px
-    +above(tablet)
-      margin-top -6px
+    .open &
+      display block
 
   // .logo/.toggle are fixed, but positioned relative to the page container. We
   // absolutely position them inside a relative parent and create a child
@@ -109,20 +98,28 @@
           x -1
           width 22px
 
+  // Including .overlay for overriding .container padding. :/
+  .overlay .nav
+    nav-padding()
+    align-items flex-start
+    display flex
+    flex-direction column
+    a:hover
+      color text-color
+    // Correct for differing line-heights between nav and main.
+    +below(tablet)
+      margin-top -5px
+    +above(tablet)
+      margin-top -6px
+
   .link
     text-h1()
     color text-color
-    &::after
-      // Break after each element, but don't expand the click area.
-      content ""
-      display block
+    min-width 50%  // bigger click target
     +below(tablet)
       line-height 54px
     +above(tablet)
       line-height 80px
-
-  .nav a:hover
-    color text-color
 </style>
 
 <script>
