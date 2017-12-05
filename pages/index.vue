@@ -4,7 +4,7 @@
       <NavSection name="top" label="" :is-top="true">
         <h1>Every step<br>more humane<br>than the last.</h1>
 
-        <MoodSet>
+        <MoodSet :class="$style.topMoodSet">
           <div slot="left">
             <!-- offset is a percentage of the width of the column. -->
             <MoodImage :scroll-at="1.2"
@@ -145,6 +145,9 @@
 
   .hidden
     visibility hidden
+
+  .top-mood-set
+    padding-bottom 80px
 </style>
 
 <script>
