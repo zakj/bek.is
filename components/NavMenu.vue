@@ -13,12 +13,14 @@
       <a :class="$style.logo" @click="open = false"
         :href="`#${topSection ? topSection.name : 'top'}`"
         v-scroll-to="topSection ? `#${topSection.name}` : `body`">
-        <transition appear v-on:enter="bloop">
+        <transition appear v-on:enter="bloopDelay">
           <MarkIcon :class="{[$style.filled]: !(open || splashVisible)}" />
         </transition>
       </a>
-      <a :class="$style.toggle" @click="open = !open" v-show="!splashVisible">
-        <MenuIcon ref="menu" />
+      <a :class="$style.toggle" @click="open = !open" v-if="!splashVisible">
+        <transition appear v-on:enter="bloop">
+          <MenuIcon ref="menu" />
+        </transition>
       </a>
     </Container>
   </div>
@@ -156,14 +158,18 @@ export default {
   }),
 
   methods: {
-    bloop(el, done) {
+    bloop(el, done, delay = 0) {
       anime({
         targets: el,
         scale: [0, 1],
         complete: done,
-        delay: 400,
+        delay,
         duration: 900,
       });
+    },
+
+    bloopDelay(el, done) {
+      this.bloop(el, done, 400);
     },
   },
 
