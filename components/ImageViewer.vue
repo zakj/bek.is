@@ -42,7 +42,7 @@ export default {
   methods: {
     incrementIndex() {
       let nextIndex = this.currentIndex + 1;
-      if (this.currentIndex === this.images.length - 1) {
+      if (this.currentIndex >= this.images.length - 1) {
         nextIndex = 0;
       }
       this.currentIndex = nextIndex;
@@ -50,7 +50,9 @@ export default {
   },
 
   mounted() {
-    this.intervalId = setInterval(this.incrementIndex, this.interval);
+    if (this.images.length > 1) {
+      this.intervalId = setInterval(this.incrementIndex, this.interval);
+    }
   },
 
   destroyed() {
