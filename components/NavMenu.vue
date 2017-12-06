@@ -1,6 +1,6 @@
 <template>
   <div :class="{[$style.open]: open}">
-    <div :class="$style.overlay">
+    <div :class="$style.overlay" ref="overlay">
       <Container :class="$style.nav">
         <a v-for="({name, label}) in mainSections"
           :class="$style.link"
@@ -14,7 +14,7 @@
         :href="`#${topSection ? topSection.name : 'top'}`"
         v-scroll-to="topSection ? `#${topSection.name}` : `body`">
         <transition appear v-on:enter="bloopDelay">
-          <MarkIcon :class="{[$style.filled]: !(open || splashVisible)}" />
+          <MarkIcon :class="{[$style.filled]: !splashVisible}" />
         </transition>
       </a>
       <a :class="$style.toggle" @click="open = !open" v-if="!splashVisible">
@@ -39,6 +39,8 @@
     top 0
     .open &
       display block
+      overflow-y scroll
+      padding-bottom 80px
 
   // .logo/.toggle are fixed, but positioned relative to the page container. We
   // absolutely position them inside a relative parent and create a child
@@ -69,6 +71,8 @@
       width logo-size
       &.filled :global #mark-background
         fill bg-color
+        .open &
+          fill salmon-color
 
   .toggle
     width 20px
@@ -248,6 +252,9 @@ export default {
       }
 
       if (this.open) {
+        requestAnimationFrame(() => {
+          this.$refs.overlay.scrollTop = 0;
+        });
         if (this.menuItemsAnimation) {
           this.menuItemsAnimation.restart();
           this.menuItemsAnimation.play();
