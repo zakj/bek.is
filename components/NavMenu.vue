@@ -6,7 +6,7 @@
           :class="$style.link"
           @click="open = false"
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
-        <Contact />
+        <Contact :class="$style.contact" />
       </Container>
     </div>
     <Container :class="$style.logoToggle">
@@ -116,10 +116,14 @@
     text-h1()
     color text-color
     min-width 50%  // bigger click target
+    transform-origin left center
     +below(tablet)
       line-height 54px
     +above(tablet)
       line-height 80px
+
+  .contact
+    transform-origin center
 </style>
 
 <script>
@@ -130,6 +134,67 @@ import Contact from '~/components/Contact.vue';
 import Container from '~/components/Container.vue';
 import MarkIcon from '~/assets/icons/mark.svg';
 import MenuIcon from '~/assets/icons/menu.svg';
+
+function menuToggleAnimation(component) {
+  const menuEl = component.$refs.menu.$el;
+  const duration = 100;
+  const bars = [1, 2, 3].map(i => menuEl.querySelector(`#menu-bar-${i} rect`));
+
+  return anime.timeline({
+    duration,
+    easing: 'easeInQuad',
+  })
+    .add({
+      targets: bars[0],
+      y: [4, 9],
+      offset: 0,
+    })
+    .add({
+      targets: bars[2],
+      y: [14, 9],
+      offset: 0,
+    })
+    .add({
+      targets: bars[1],
+      duration: 1,
+      opacity: [1, 0],
+      offset: '-=0',
+    })
+    .add({
+      targets: bars[0],
+      y: 9,
+      rotateZ: [0, '45deg'],
+      offset: duration * 1.5,
+    })
+    .add({
+      targets: bars[2],
+      y: 9,
+      rotateZ: [0, '-45deg'],
+      offset: duration * 1.5,
+    });
+}
+
+function menuItemsAnimation(component) {
+  const contactEl = component.$el.querySelectorAll(`.${component.$style.contact}`);
+  const linkEl = component.$el.querySelectorAll(`.${component.$style.link}`);
+
+  return anime.timeline()
+    .add({
+      targets: linkEl,
+      opacity: {value: [0, 1], duration: 600},
+      scale: {value: [0, 1], duration: 800},
+      elasticity: 50,
+      delay: (target, index) => index * 100,
+    })
+    .add({
+      targets: contactEl,
+      opacity: [0, 1],
+      scale: [0.8, 1],
+      elasticity: 100,
+      duration: 700,
+      offset: '-=600',
+    });
+}
 
 export default {
   components: {
@@ -150,7 +215,8 @@ export default {
   },
 
   data: () => ({
-    animation: null,
+    menuToggleAnimation: null,
+    menuItemsAnimation: null,
     open: false,
   }),
 
@@ -173,48 +239,22 @@ export default {
   watch: {
     open() {
       document.body.classList.toggle('nav-open', this.open);
-      if (this.animation) {
-        this.animation.reverse();
-        this.animation.play();
-        return;
+
+      if (this.menuToggleAnimation) {
+        this.menuToggleAnimation.reverse();
+        this.menuToggleAnimation.play();
+      } else {
+        this.menuToggleAnimation = menuToggleAnimation(this);
       }
 
-      const menuEl = this.$refs.menu.$el;
-      const duration = 100;
-      const bars = [1, 2, 3].map(i => menuEl.querySelector(`#menu-bar-${i} rect`));
-
-      this.animation = anime.timeline({
-        duration,
-        easing: 'easeInQuad',
-      })
-        .add({
-          targets: bars[0],
-          y: [4, 9],
-          offset: 0,
-        })
-        .add({
-          targets: bars[2],
-          y: [14, 9],
-          offset: 0,
-        })
-        .add({
-          targets: bars[1],
-          duration: 1,
-          opacity: [1, 0],
-          offset: '-=0',
-        })
-        .add({
-          targets: bars[0],
-          y: 9,
-          rotateZ: [0, '45deg'],
-          offset: duration * 1.5,
-        })
-        .add({
-          targets: bars[2],
-          y: 9,
-          rotateZ: [0, '-45deg'],
-          offset: duration * 1.5,
-        });
+      if (this.open) {
+        if (this.menuItemsAnimation) {
+          this.menuItemsAnimation.restart();
+          this.menuItemsAnimation.play();
+        } else {
+          this.menuItemsAnimation = menuItemsAnimation(this);
+        }
+      }
     },
   },
 };

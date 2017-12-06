@@ -8,7 +8,7 @@
       <a href="https://www.instagram.com/saintbek/">@saintbek</a>
     </p>
     <p>
-      Site magic by <a href="https://zakj.net/">@zakj</a>
+      <em>Site magic by <a href="https://zakj.net/">@zakj</a></em>
     </p>
   </div>
 </template>
