@@ -22,6 +22,11 @@ module.exports = {
         });
       }
 
+      if (dev) {
+        // Speed up builds.
+        config.devtool = 'cheap-eval-source-map';
+      }
+
       const vueLoader = findLoader(config, 'vue-loader');
       if (vueLoader) {
         vueLoader.options = vueLoader.options || {};
@@ -51,6 +56,11 @@ module.exports = {
         },
       });
     },
+
+    vendor: [
+      'animejs',
+      'vue-marked',
+    ],
   },
 
   css: [
