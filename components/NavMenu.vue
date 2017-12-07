@@ -67,12 +67,18 @@
       left tablet-padding
     svg
       height logo-size
+      overflow visible
       transform scale(0)
       width logo-size
       &.filled :global #mark-background
         fill bg-color
         .open &
           fill salmon-color
+      :global #mark-highlight
+        transform-origin center
+        transition transform 100ms ease-in
+      &:hover :global #mark-highlight
+        transform scale(1.1)
 
   .toggle
     width 20px
