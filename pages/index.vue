@@ -37,8 +37,8 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone. I build and care for extraordinary teams and lead the
-          creation of products both new to market and loved by millions.
+          I’m Bek Stone, an advisor and creative director. I build and care for extraordinary teams and lead
+          them in the creation of products both new to market and loved by millions.
 
           For the last decade, systems thinking has woven its way through all I
           do, trading friction for efficiency. Strategy and an eye for the
@@ -47,8 +47,7 @@
           Fostering great talent, advocating the quest for fulfillment, and
           rallying the whole lot to work together is pure delight.
 
-          I live in Oakland with my partner Zak, a ridiculous beastie named
-          Wing, and an army of plant babies. When not rocking business pants, I
+          I live in Oakland with my partner Zak, a ridiculous beastie, and an army of plant babies. When not rocking business pants, I
           can be found composing music, designing apparel, or carving through
           the Redwoods on a Moto Guzzi named Fusa.
         </vue-marked>
@@ -114,7 +113,7 @@
 
         <vue-marked>
           In January of 2015, I joined Airbnb. While the design team of 20 that
-          could initially fit snuggly around a whiteboard together would exceed
+          could fit snuggly around a whiteboard would exceed
           100 before my departure less than a year and a half later, a
           signature climate of warmth never faltered.
 
@@ -201,7 +200,7 @@
           ]" />
 
         <vue-marked>
-          Equipped with new product requirements and our drafted brand
+          Equipped with new requirements and our drafted brand
           language, design leads and executives from our cross-functional teams
           headed offsite to hash out the first version of Airbnb’s Design
           Language System. Teams began testing, breaking, and submitting
@@ -217,9 +216,7 @@
           As with any great endeavor, this one too had to travel the difficult
           but transformative path of discovery. No one solution could meet all
           needs, and no process could satisfy all those involved. More valuable
-          than the system created were the people it aimed to serve. A shared
-          language was bridging the gap between disciplines, and something
-          altogether more beautiful was unfolding.
+          than the system created were the people it aimed to serve. At last, a shared language was beginning to bridge the gap between disciplines, and something altogether more beautiful was unfolding.
 
           With the rollout underway and an able team in place, I departed from
           Airbnb—one month before the public launch in April, 2016. The team
@@ -266,12 +263,17 @@
 
           Core contributors:  
           Alex Schleifer, Adam Michela, Karri Saarinen, Michael Bachand, Paul
-          Kompfner, Salih Abdul-Karim, Michael Sui, Jing Jian, Britt Nelson,
+          Kompfner, Sean Abraham, Salih Abdul-Karim, Michael Sui, Jing Jian, Britt Nelson,
           Hannah Hughes, Luke Carter, Stephen Wyatt Bush.
 
           Invaluable partners:  
           Katie Dill, Amber Cartwright, Taido Nakajima, Katie Chen, Adam
           Glynn-Finnegan.
+          
+          ## Related articles
+
+          [A Design System to Take on the World](http://www.creativebloq.com/features/why-design-is-key-to-airbnbs-incredible-success)  
+          *by Tanya Combrinck*
         </vue-marked>
       </NavSection>
 
