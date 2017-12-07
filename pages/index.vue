@@ -273,13 +273,8 @@
           ## Related articles
 
           [A Design System to Take on the World](http://www.creativebloq.com/features/why-design-is-key-to-airbnbs-incredible-success)  
-          *by Tanya Combrinck*<br>
-          [The Way We Build](https://airbnb.design/the-way-we-build/)  
-          *by Alex Schleifer*<br>
-          [Creating the Airbnb Design System](http://karrisaarinen.com/posts/building-airbnb-design-system/)  
-          *by Karri Saarinen*<br>
-          [Communicating Clarity and Charm](https://design.google/library/airbnb-communicating-clarity-and-charm/)  
-          *by Google Design*
+          *by Tanya Combrinck*
+     
         </vue-marked>
       </NavSection>
 
