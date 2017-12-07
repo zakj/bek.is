@@ -113,7 +113,7 @@
 
         <vue-marked>
           In January of 2015, I joined Airbnb. While the design team of 20 that
-          could fit snuggly around a whiteboard would exceed
+          could fit snugly around a whiteboard would exceed
           100 before my departure less than a year and a half later, a
           signature climate of warmth never faltered.
 
