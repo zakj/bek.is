@@ -11,11 +11,8 @@
   .container
     display flex
     +below(tablet)
-      margin-top 100px  // XXX this doesn't belong here
       margin-left mobile-padding * -1
       margin-right mobile-padding * -1
-    +above(tablet)
-      margin-top 180px  // XXX this doesn't belong here
     img
       display block
 

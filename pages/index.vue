@@ -138,6 +138,8 @@
 </template>
 
 <style lang="stylus" module>
+  @require '~assets/util'
+
   // Keep NavMenu stacking above contents, but display first.
   .body
     display flex
@@ -148,6 +150,10 @@
 
   .top-mood-set
     padding-bottom 90px
+    +below(tablet)
+      margin-top 100px
+    +above(tablet)
+      margin-top 180px
 </style>
 
 <script>
