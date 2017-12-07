@@ -2,7 +2,7 @@
   <div :class="$style.body">
     <Container :class="{[$style.hidden]: loading}">
       <NavSection name="top" label="" :is-top="true">
-        <h1>Every step<br>more humane<br>than the last.</h1>
+          <h1>Every step<br>more humane<br>than the last.</h1>
 
         <MoodSet :class="$style.topMoodSet">
           <div slot="left">
@@ -273,11 +273,11 @@
           ## Related articles
 
           [A Design System to Take on the World](http://www.creativebloq.com/features/why-design-is-key-to-airbnbs-incredible-success)  
-          *by Tanya Combrinck*
+          *by Tanya Combrinck*<br>
           [The Way We Build](https://airbnb.design/the-way-we-build/)  
-          *by Alex Schleifer*
+          *by Alex Schleifer*<br>
           [Creating the Airbnb Design System](http://karrisaarinen.com/posts/building-airbnb-design-system/)  
-          *by Karri Saarinen*
+          *by Karri Saarinen*<br>
           [Communicating Clarity and Charm](https://design.google/library/airbnb-communicating-clarity-and-charm/)  
           *by Google Design*
         </vue-marked>
