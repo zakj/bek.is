@@ -11,8 +11,9 @@
   .container
     display flex
     +below(tablet)
-      margin-left mobile-padding * -1
-      margin-right mobile-padding * -1
+      margin 1.5em mobile-padding * -1
+    +above(tablet)
+      margin 2em 0
     img
       display block
 

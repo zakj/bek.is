@@ -37,39 +37,38 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, a creative director, musician, and most assuredly not a
-          saint. I build and nurture extraordinary teams who create products both
-          new to market and loved by millions.
+          I’m Bek Stone. I build and care for extraordinary teams and lead the
+          creation of products both new to market and loved by millions.
 
-          For over a decade, systems design has woven its way through all I do,
-          trading friction for efficiency. Strategy and an eye for the iconic
-          helps me shepherd brands to a space uniquely their own. Above all are
-          people—saturating this wild ride with endless inspiration. Fostering
-          great talent, advocating the quest for fulfillment, and rallying the
-          unlikely to work together is pure delight.
+          For the last decade, systems thinking has woven its way through all I
+          do, trading friction for efficiency. Strategy and an eye for the
+          iconic help me shepherd brands to a space uniquely their own. Above
+          all are people—saturating this wild ride with endless inspiration.
+          Fostering great talent, advocating the quest for fulfillment, and
+          rallying the whole lot to work together is pure delight.
 
-          I live in Oakland with my partner Zak, a ridiculous beastie named Wing,
-          and an army of plant babies. When not rocking business pants, I can be
-          found composing music, designing apparel, or carving through the
-          Redwoods on a Moto Guzzi named Fusa.
+          I live in Oakland with my partner Zak, a ridiculous beastie named
+          Wing, and an army of plant babies. When not rocking business pants, I
+          can be found composing music, designing apparel, or carving through
+          the Redwoods on a Moto Guzzi named Fusa.
         </vue-marked>
       </NavSection>
 
       <NavSection name="method" label="Methodology" :numbered-headings="true">
         <vue-marked>
-          ## Human first
+          ## People, not users
 
           The infinite parade of glowing rectangles can cloud our view, but
-          products are in service of people. There’s no cure for assumption like
-          human connection. Curiosity and empathy build bridges—fueling research
-          and synthesis core to great product design.
+          products are in service of people. Human connection is the best cure
+          for our assumptions. Curiosity and empathy build bridges—fueling the
+          research and synthesis that are core to great product design.
 
           ## Begin at the end
 
-          Great endings inspire great beginnings. What will your legacy be? Will
-          you proudly sign your name? Crystallizing the outcome enables us to
-          define how to achieve it, measure progress, and anticipate many of the
-          changing conditions to come.
+          Great endings inspire great beginnings. What will your legacy be?
+          Will you proudly sign your name? Crystallizing the outcome enables us
+          to define how to achieve it, measure progress, and anticipate many of
+          the changing conditions to come.
 
           ## Maker’s vault
 
@@ -80,29 +79,200 @@
 
           ## Co-lab
 
-          Iterative feedback and collaboration directly equates to product
-          quality. Ask hard questions, find the holes, swap files and gain new
+          Iterative feedback and collaboration directly equate to product
+          quality. Ask hard questions, find the holes, swap files, and gain new
           perspectives. Use tooling and prototyping to address issues early on
           and illuminate new opportunities.
 
           ## Redefine the bar
 
-          Product design is an endless negotiation of necessary compromise. But
-          constraints never deter the ingenious. A dedication to craft and
-          relentless commitment to differentiate, produces not great but
+          Product design is an endless negotiation of necessary compromises,
+          but constraints never deter the ingenious. A dedication to craft and
+          relentless commitment to differentiate produce not just great, but
           groundbreaking results.
 
           ## Onwards and upwards
 
           Reflection is the ultimate catalyst for growth. Retrospectives,
           coaching, one-on-ones, and time budgeted for introspection are
-          ingredients essential to perpetual development. Excellent product teams
-          prioritize learning from experience, and everyone benefits.
+          ingredients essential to perpetual development. The best product
+          teams prioritize learning from experience, and everyone benefits.
         </vue-marked>
       </NavSection>
 
       <NavSection name="case-studies" label="Case Studies">
-        here is the case studies section
+        <vue-marked>
+          # Airbnb:
+          # Scaling the Heart
+
+          Building the Design Language System powering Airbnb innovation.
+        </vue-marked>
+
+        <ImageViewer :images="[
+          '/airbnb/Airbnb-MMXV.jpg',
+          ]" />
+
+        <vue-marked>
+          In January of 2015, I joined Airbnb. While the design team of 20 that
+          could initially fit snuggly around a whiteboard together would exceed
+          100 before my departure less than a year and a half later, a
+          signature climate of warmth never faltered.
+
+          Up until this point, Airbnb had grown organically. The widely
+          publicized rebrand six months prior had catapulted an
+          already-valuable service into the “internet darling” stratosphere.
+          2015 would usher in the company’s first significant investment in
+          global marketing, further extending it’s reach. Internally, teams
+          were working and growing at a feverish pace.
+
+          By July, product design had more than doubled in size. Teams and
+          initiatives across the org struggled to stay in sync. Web, iOS,
+          Android, and Watch each had unique designs and codebases. We needed a
+          shared language and a stable and performant foundation to withstand
+          continued growth.
+
+          Our goal was to create a universal design system and I was given the
+          green light to build a dedicated team.
+        </vue-marked>
+
+        <ImageViewer :images="[
+          '/airbnb/Airbnb-DLS-Founding-Team.jpg',
+          ]" />
+
+        <vue-marked>
+          As the founding members began to research and audit, I set out to
+          connect with leaders across the organization to gain understanding,
+          exchange ideas, and develop shared goals for our future. Armed with
+          insights, I drafted our first vision and guiding principles and set
+          the growing team loose to explore and create.
+
+          Fonts would be scaled up for legibility. Color contrast boosted to
+          meet new accessibility benchmarks. Bold accents introduced pacing and
+          illustrations rang harmonious with our expanding icon system.
+          Movement brought life. A visual language emerged—vibrant, clear, and
+          as animated and conversational as the dinner table.
+        </vue-marked>
+
+        <MoodSet>
+          <div slot="left">
+            <MoodImage
+              src="/airbnb/Type-Scales.jpg"
+              :scroll-at="1.2"
+              :offset="80" />
+            <MoodImage
+              src="/airbnb/DLS-Pacing.png"
+              orientation="landscape"
+              :scroll-at="1.2"
+              :offset="-10" />
+          </div>
+          <div slot="right">
+            <MoodImage
+              src="/airbnb/Airbnb-DLS-Brand.jpg"
+              orientation="landscape"
+              :scroll-at="0.9"
+              :offset="10" />
+            <MoodImage
+              src="/airbnb/DLS-Calendar.png"
+              :scroll-at="1.1"
+              :offset="0" />
+            <MoodImage
+              src="/airbnb/DLS-Motion.gif"
+              orientation="landscape"
+              size="small"
+              :scroll-at="1"
+              :offset="40" />
+          </div>
+        </MoodSet>
+
+        <vue-marked>
+          Running in parallel were two initiatives introducing radical changes
+          to flows across all platforms. The success of these colossal efforts
+          hinged on having a sound and iconic system to build upon. Quality
+          cannot be defined by external characteristics alone. Reliability and
+          performance are inextricable traits, and required tremendous
+          cooperation across product, engineering, and design to achieve. We
+          focused our efforts on mobile to lead the way.
+        </vue-marked>
+
+        <ImageViewer :images="[
+          '/airbnb/Airbnb-DLS-Leads.jpg',
+          '/airbnb/Airbnb-DLS.jpg',
+          '/airbnb/Airbnb-DLS-Components.jpg',
+          ]" />
+
+        <vue-marked>
+          Equipped with new product requirements and our drafted brand
+          language, design leads and executives from our cross-functional teams
+          headed offsite to hash out the first version of Airbnb’s Design
+          Language System. Teams began testing, breaking, and submitting
+          improvements. As the system solidified, I guided adoption,
+          integration, and continued evolution across product teams.
+        </vue-marked>
+
+        <ImageViewer :images="[
+          '/airbnb/Airbnb-DLS-Components-Sample.png',
+          ]" />
+
+        <vue-marked>
+          As with any great endeavor, this one too had to travel the difficult
+          but transformative path of discovery. No one solution could meet all
+          needs, and no process could satisfy all those involved. More valuable
+          than the system created were the people it aimed to serve. A shared
+          language was bridging the gap between disciplines, and something
+          altogether more beautiful was unfolding.
+
+          With the rollout underway and an able team in place, I departed from
+          Airbnb—one month before the public launch in April, 2016. The team
+          and their work continue to flourish, driving a greater level of
+          continuity and cross-functional collaboration.
+
+          Laying a new foundation and rebuilding a home with a growing family
+          inside was no small feat, and there were countless challenges and
+          opportunities for the organization to learn along the way. In the
+          end, a once small and mighty team empowered Airbnb to scale in new
+          ways—each step more humane than the last.
+        </vue-marked>
+
+        <MoodSet>
+          <div slot="left">
+            <MoodImage
+              src="/airbnb/Airbnb-2015-XD.jpg"
+              :scroll-at="1.2"
+              :offset="80" />
+            <MoodImage
+              src="/airbnb/Karri-Saarinen.jpg"
+              orientation="landscape"
+              :scroll-at="1.2"
+              :offset="-10" />
+          </div>
+          <div slot="right">
+            <MoodImage
+              src="/airbnb/Airbnb-FutureIsFemale.jpg"
+              orientation="landscape"
+              :scroll-at="1.1" />
+            <MoodImage
+              src="/airbnb/SalihTheDream.jpg"
+              :scroll-at="0.9"
+              :offset="-10" />
+            <MoodImage
+              src="/airbnb/HowWeBuild.jpg"
+              orientation="landscape"
+              :offset="60" />
+          </div>
+        </MoodSet>
+
+        <vue-marked>
+          ## Encore
+
+          Core contributors:  
+          Alex Schleifer, Adam Michela, Karri Saarinen, Michael Bachand, Paul
+          Kompfner, Salih Abdul-Karim, Michael Sui, Jing Jian, Britt Nelson,
+          Hannah Hughes, Luke Carter, Stephen Wyatt Bush.
+
+          Invaluable partners:  
+          Katie Dill, Amber Cartwright, Taido Nakajima, Katie Chen, Adam
+          Glynn-Finnegan.
+        </vue-marked>
       </NavSection>
 
       <NavSection name="voices" label="Voices">
@@ -110,20 +280,14 @@
           > Bek is one of those rare leaders that boldly balances hands-on
           > relevancy with clear visioned execution.
 
-          [Rachel Holbrook](some link)  
-          *Global Head of Production, Airbnb*
+          [Ryan Northway](https://www.linkedin.com/in/northway/)  
+          *Principal Product Designer, Real Labs*
 
-          > Green juice biodiesel synth, salvia roof party raw denim kombucha
-          > pickled kale.
+          > A shining star in a sea of sameness, an invigorator, an
+          > inspiration.
 
-          [Katie Dill](some link)  
-          *VP of Design, Lyft*
-
-          > Heirloom authentic chambray pickled lomo. Hell of normcore pork
-          > belly.
-
-          [Peter Giorgi](some link)  
-          *CMO, Celebrity Cruises*
+          [Benjamin Roy](https://www.linkedin.com/in/beroy/)  
+          *Director, Venture Visuals*
         </vue-marked>
       </NavSection>
 

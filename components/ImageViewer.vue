@@ -14,7 +14,9 @@
   .container
     position relative
     +below(tablet)
-      margin 0 (mobile-padding * -1)
+      margin 1.5em (mobile-padding * -1)
+    +above(tablet)
+      margin 2em 0
 
   .container, .image
     size-ratio(16, 9)
