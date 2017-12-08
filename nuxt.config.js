@@ -86,7 +86,7 @@ module.exports = {
       {name: 'description', content: META_DESCRIPTION},
       {property: 'og:type', content: 'website'},
       {property: 'og:url', content: 'https://bek.is/'},
-      {property: 'og:image', content: '/BekStone-FB-Share.jpg'},
+      {property: 'og:image', content: 'https://bek.is/BekStone-FB-Share.jpg'},
       {property: 'og:description', content: META_DESCRIPTION},
     ],
     link: [
