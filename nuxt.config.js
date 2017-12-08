@@ -1,3 +1,5 @@
+const META_DESCRIPTION = 'Advisor, creative director, and maker and breaker of things.';
+
 const LINT_ON_BUILD = false;
 
 const PRELOAD_FONT_FILES = [
@@ -80,6 +82,12 @@ module.exports = {
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+
+      {name: 'description', content: META_DESCRIPTION},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:url', content: 'https://bek.is/'},
+      {property: 'og:image', content: '/BekStone-FB-Share.jpg'},
+      {property: 'og:description', content: META_DESCRIPTION},
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
