@@ -267,15 +267,47 @@
           Hannah Hughes, Luke Carter, Stephen Wyatt Bush.
 
           Invaluable partners:  
-          Katie Dill, Amber Cartwright, Taido Nakajima, Katie Chen, Adam
-          Glynn-Finnegan.
+          Katie Dill, Amber Cartwright, Allen Mask, Taido Nakajima, Katie Chen,
+          Adam Glynn-Finnegan.
           
           ## Related articles
 
           [A Design System to Take on the World](http://www.creativebloq.com/features/why-design-is-key-to-airbnbs-incredible-success)  
           *by Tanya Combrinck*
-     
+
+          [The Way We Build](https://airbnb.design/the-way-we-build/)  
+          *by Alex Schleifer*
+
+          [Creating the Airbnb Design System](http://karrisaarinen.com/posts/building-airbnb-design-system/)  
+          *by Karri Saarinen*
+
+          [Communicating Clarity and Charm](https://design.google/library/airbnb-communicating-clarity-and-charm/)  
+          *by Google Design*
         </vue-marked>
+      </NavSection>
+
+      <NavSection name="workshop" label="Workshop">
+        <vue-marked>
+          # Making and breaking
+        </vue-marked>
+
+        <ImageViewer :images="[
+          '/workshop/BekStone-CastSilver.jpg',
+          '/workshop/Constellations.jpg',
+          '/workshop/Emboss.jpg',
+          '/workshop/Flytrap-Construction.jpg',
+          '/workshop/Flytrap-Deck.jpg',
+          '/workshop/Lettering.jpg',
+          '/workshop/LostWax.jpg',
+          '/workshop/NEU.jpg',
+          '/workshop/Ombre.jpg',
+          '/workshop/TLE-3D-Mark.jpg',
+          '/workshop/TalkingWalls.jpg',
+          '/workshop/TheEnd.jpg',
+          '/workshop/ThisIsBound.jpg',
+          '/workshop/Volcanic.jpg',
+          '/workshop/Workshop.jpg',
+          ]" />
       </NavSection>
 
       <NavSection name="voices" label="Voices">
