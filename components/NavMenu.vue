@@ -114,8 +114,13 @@
     align-items flex-start
     display flex
     flex-direction column
+
+    // Override link hover colors.
+    a:not(.link)
+      underline(text-color, text-color)
     a:hover
       color text-color
+
     // Correct for differing line-heights between nav and main.
     +below(tablet)
       margin-top -5px
