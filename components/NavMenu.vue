@@ -270,5 +270,9 @@ export default {
       }
     },
   },
+
+  destroyed() {
+    document.body.classList.remove('nav-open');
+  },
 };
 </script>
