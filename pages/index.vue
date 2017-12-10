@@ -37,8 +37,9 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, an advisor and creative director. I build and care for extraordinary teams and lead
-          them in the creation of products both new to market and loved by millions.
+          I’m Bek Stone, an advisor and creative director. I build and care for
+          extraordinary teams and lead them in the creation of products both
+          new to market and loved by millions.
 
           For the last decade, systems thinking has woven its way through all I
           do, trading friction for efficiency. Strategy and an eye for the
@@ -47,9 +48,17 @@
           Fostering great talent, advocating the quest for fulfillment, and
           rallying the whole lot to work together is pure delight.
 
-          I live in Oakland with my partner Zak, a ridiculous beastie, and an army of plant babies. When not rocking business pants, I
-          can be found composing music, designing apparel, or carving through
-          the Redwoods on a Moto Guzzi named Fusa.
+          I live in Oakland with my partner [Zak][], a ridiculous [beastie][],
+          and an army of [plant babies][]. When not rocking business pants, I
+          can be found composing [music][], designing [jewelry and apparel][],
+          or carving through the Redwoods on a Moto Guzzi named [Fusa][].
+
+          [Zak]: https://zakj.net/
+          [beastie]: https://www.instagram.com/p/BNsYAKejaIY/?taken-by=saintbek
+          [plant babies]: https://www.instagram.com/p/BUF4y6iBK4m/?taken-by=saintbek
+          [music]: https://www.instagram.com/p/osFE-qNznI/?taken-by=saintbek
+          [jewelry and apparel]: https://www.instagram.com/p/Bca2HvWhgkc/?taken-by=saintbek
+          [Fusa]: https://www.instagram.com/p/BadE2jXBQOz/?taken-by=saintbek
         </vue-marked>
       </NavSection>
 
@@ -113,9 +122,9 @@
 
         <vue-marked>
           In January of 2015, I joined Airbnb. While the design team of 20 that
-          could fit snugly around a whiteboard would exceed
-          100 before my departure less than a year and a half later, a
-          signature climate of warmth never faltered.
+          could fit snugly around a whiteboard would quadruple before my
+          departure less than a year and a half later, a signature climate of
+          warmth never faltered.
 
           Up until this point, Airbnb had grown organically. The widely
           publicized rebrand six months prior had catapulted an
