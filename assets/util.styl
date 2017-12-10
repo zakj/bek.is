@@ -29,11 +29,11 @@ between(w1, w2)
     {block}
 
 text-h1()
+  background-image none  // override underline
   font-family header-font-stack
   font-size 40px
   font-weight bold
   line-height 44px
-  text-decoration none
   +between(mobile, tablet)
     font-size 44px
     line-height 44px
@@ -92,3 +92,11 @@ nav-padding()
     padding-top nav-padding-size(tablet-padding)
   +above(desktop)
     padding-top nav-padding-size(desktop-padding)
+
+// Provide a controlled replacement for text-decoration: underline
+underline(color, hover-color, size = 0.03em, offset = 0.14em)
+  end = offset + size
+  background-image linear-gradient(to top, transparent, transparent offset, color offset, color end, transparent end)
+  text-decoration none
+  &:hover
+    background-image linear-gradient(to top, transparent, transparent offset, hover-color offset, hover-color end, transparent end)
