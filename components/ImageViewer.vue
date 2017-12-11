@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.imageViewer">
     <div
       v-for="(url, index) in images"
       :class="[$style.image, {[$style.current]: index == currentIndex}]"
@@ -11,14 +11,14 @@
 <style lang="stylus" module>
   @require '~assets/util'
 
-  .container
+  .image-viewer
     position relative
     +below(tablet)
       margin 1.5em (mobile-padding * -1)
     +above(tablet)
       margin 2em 0
 
-  .container, .image
+  .image-viewer, .image
     size-ratio(16, 9)
 
   .image

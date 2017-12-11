@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.moodSet">
     <div :class="$style.left"><slot name="left"></slot></div>
     <div :class="$style.right"><slot name="right"></slot></div>
   </div>
@@ -8,7 +8,7 @@
 <style lang="stylus" module>
   @require '~assets/util'
 
-  .container
+  .mood-set
     display flex
     +below(tablet)
       margin 1.5em mobile-padding * -1

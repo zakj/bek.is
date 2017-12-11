@@ -2,7 +2,7 @@
   <div :class="$style.body">
     <Container :class="{[$style.hidden]: loading}">
       <NavSection name="top" label="" :is-top="true">
-          <h1>Every step<br>more humane<br>than the last.</h1>
+        <h1>Every step<br>more humane<br>than the last.</h1>
 
         <MoodSet :class="$style.topMoodSet">
           <div slot="left">
@@ -225,7 +225,9 @@
           As with any great endeavor, this one too had to travel the difficult
           but transformative path of discovery. No one solution could meet all
           needs, and no process could satisfy all those involved. More valuable
-          than the system created were the people it aimed to serve. At last, a shared language was beginning to bridge the gap between disciplines, and something altogether more beautiful was unfolding.
+          than the system created were the people it aimed to serve. At last, a
+          shared language was beginning to bridge the gap between disciplines,
+          and something altogether more beautiful was unfolding.
 
           With the rollout underway and an able team in place, I departed from
           Airbnb—one month before the public launch in April, 2016. The team
@@ -272,8 +274,8 @@
 
           Core contributors:  
           Alex Schleifer, Adam Michela, Karri Saarinen, Michael Bachand, Paul
-          Kompfner, Sean Abraham, Salih Abdul-Karim, Michael Sui, Jing Jian, Britt Nelson,
-          Hannah Hughes, Luke Carter, Stephen Wyatt Bush.
+          Kompfner, Sean Abraham, Salih Abdul-Karim, Michael Sui, Jing Jian,
+          Britt Nelson, Hannah Hughes, Luke Carter, Stephen Wyatt Bush.
 
           Invaluable partners:  
           Katie Dill, Amber Cartwright, Allen Mask, Taido Nakajima, Katie Chen,
