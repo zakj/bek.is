@@ -217,9 +217,7 @@
           integration, and continued evolution across product teams.
         </vue-marked>
 
-        <ImageViewer :images="[
-          '/airbnb/Airbnb-DLS-Components-Sample.png',
-          ]" />
+        <FramedVideo src="/airbnb/Airbnb-DLS-Components-Demo.mp4" />
 
         <vue-marked>
           As with any great endeavor, this one too had to travel the difficult
@@ -380,6 +378,7 @@ import {mapMutations, mapState} from 'vuex';
 
 import Contact from '~/components/Contact.vue';
 import Container from '~/components/Container.vue';
+import FramedVideo from '~/components/FramedVideo.vue';
 import ImageViewer from '~/components/ImageViewer.vue';
 import MoodImage from '~/components/MoodImage.vue';
 import MoodSet from '~/components/MoodSet.vue';
@@ -392,6 +391,7 @@ export default {
   components: {
     Contact,
     Container,
+    FramedVideo,
     ImageViewer,
     MoodImage,
     MoodSet,
