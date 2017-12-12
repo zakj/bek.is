@@ -104,6 +104,7 @@ module.exports = {
   loading: false,
 
   plugins: [
+    '~/plugins/deferred',
     '~/plugins/vue-in-view',
     '~/plugins/vue-scrollto',
   ],

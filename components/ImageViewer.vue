@@ -3,7 +3,7 @@
     <div
       v-for="(url, index) in images"
       :class="[$style.image, {[$style.current]: index == currentIndex}]"
-      :style="{backgroundImage: `url(${url})`}"
+      :style="{backgroundImage: ready ? `url(${url})` : 'none'}"
       ></div>
   </div>
 </template>

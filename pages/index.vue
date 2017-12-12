@@ -116,7 +116,7 @@
           Building the Design Language System powering Airbnb innovation.
         </vue-marked>
 
-        <ImageViewer :images="[
+        <ImageViewer defer-load :images="[
           '/airbnb/Airbnb-MMXV.jpg',
           ]" />
 
@@ -143,7 +143,7 @@
           green light to build a dedicated team.
         </vue-marked>
 
-        <ImageViewer :images="[
+        <ImageViewer defer-load :images="[
           '/airbnb/Airbnb-DLS-Founding-Team.jpg',
           ]" />
 
@@ -202,7 +202,7 @@
           focused our efforts on mobile to lead the way.
         </vue-marked>
 
-        <ImageViewer :images="[
+        <ImageViewer defer-load :images="[
           '/airbnb/Airbnb-DLS-Leads.jpg',
           '/airbnb/Airbnb-DLS.jpg',
           '/airbnb/Airbnb-DLS-Components.jpg',
@@ -217,7 +217,7 @@
           integration, and continued evolution across product teams.
         </vue-marked>
 
-        <FramedVideo src="/airbnb/Airbnb-DLS-Components-Demo.mp4" />
+        <FramedVideo src="https://s3.us-west-2.amazonaws.com/bek-is/Airbnb-DLS-Components-Demo.mp4" defer-load />
 
         <vue-marked>
           As with any great endeavor, this one too had to travel the difficult
@@ -304,7 +304,7 @@
           environments, and exploring physical materials.
         </vue-marked>
 
-        <ImageViewer :images="[
+        <ImageViewer defer-load :images="[
           '/archive/BekStone-CastSilver.jpg',
           '/archive/Constellations.jpg',
           '/archive/Emboss.jpg',
