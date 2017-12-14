@@ -279,7 +279,8 @@
 
           Invaluable partners:  
           Katie Dill, Amber Cartwright, Allen Mask, Taido Nakajima, Katie Chen,
-          Adam Glynn-Finnegan.
+          Adam Glynn-Finnegan, Kevin Grennan, Alvin Hsia, Shane Allen, Charlie
+          Aufmann.
           
           ## Related articles
 
@@ -297,27 +298,24 @@
         </vue-marked>
       </NavSection>
 
-      <NavSection name="workshop" label="Workshop">
+      <NavSection name="archive" label="Archive">
         <vue-marked>
           # Making and breaking
+
+          Highlights in humanizing digital experiences, constructing
+          environments, and exploring physical materials.
         </vue-marked>
 
         <ImageViewer :images="[
-          '/workshop/BekStone-CastSilver.jpg',
-          '/workshop/Constellations.jpg',
-          '/workshop/Emboss.jpg',
-          '/workshop/Flytrap-Construction.jpg',
-          '/workshop/Flytrap-Deck.jpg',
-          '/workshop/Lettering.jpg',
-          '/workshop/LostWax.jpg',
-          '/workshop/NEU.jpg',
-          '/workshop/Ombre.jpg',
-          '/workshop/TLE-3D-Mark.jpg',
-          '/workshop/TalkingWalls.jpg',
-          '/workshop/TheEnd.jpg',
-          '/workshop/ThisIsBound.jpg',
-          '/workshop/Volcanic.jpg',
-          '/workshop/Workshop.jpg',
+          '/archive/BekStone-CastSilver.jpg',
+          '/archive/Constellations.jpg',
+          '/archive/Emboss.jpg',
+          '/archive/Flytrap-Construction.jpg',
+          '/archive/NEU.jpg',
+          '/archive/PressedJuicery.jpg',
+          '/archive/TLE-3D-Mark.jpg',
+          '/archive/ThisIsBound.jpg',
+          '/archive/Workshop.jpg',
           ]" />
       </NavSection>
 
