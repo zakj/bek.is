@@ -321,6 +321,12 @@
 
       <NavSection name="voices" label="Voices">
         <vue-marked>
+          > An expert in her craft, a leader with humility, and someone you can
+          > always rely on to deliver innovative and fresh design perspectives.
+
+          [Adam Bordow](https://www.linkedin.com/in/adam-bordow-a513557/)  
+          *Photo Editor, Airbnb*
+
           > Bek is one of those rare leaders that boldly balances hands-on
           > relevancy with clear visioned execution.
 
@@ -332,6 +338,11 @@
 
           [Benjamin Roy](https://www.linkedin.com/in/beroy/)  
           *Director, Venture Visuals*
+
+          > If I could get Bek on my team ever again I'd do so in a heartbeat.
+
+          [Dan Hill](https://www.linkedin.com/in/hilldan/)  
+          *Director of Product, Airbnb*
         </vue-marked>
       </NavSection>
 
