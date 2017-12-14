@@ -311,7 +311,7 @@
         </vue-marked>
       </NavSection>
 
-      <NavSection name="archive" label="Archive">
+      <NavSection name="archives" label="Archives">
         <vue-marked>
           # Making and breaking
 
