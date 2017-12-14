@@ -2,7 +2,7 @@
   <div
     :class="[$style.image, $style[orientation], $style[size]]"
     :style="{
-      backgroundImage: `url(${src})`,
+      backgroundImage: ready ? `url(${src})` : 'none',
       transform: `translateY(${deltaY}px)`,
       marginTop: `${Math.round(offset)}%`,
     }"

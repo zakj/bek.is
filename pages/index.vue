@@ -12,8 +12,10 @@
             <MoodImage :offset="-14" :scroll-at="1.2"
               src="/mood/V7.jpg" />
             <MoodImage :offset="80" :scroll-at="1.2"
+              defer-load
               src="/mood/Agave.jpg" />
             <MoodImage :offset="40" :scroll-at=".9"
+              defer-load
               src="/mood/Soiled.jpg" />
           </div>
           <div slot="right">
@@ -24,10 +26,13 @@
             <MoodImage orientation="landscape"
               src="/mood/Wing.jpg" />
             <MoodImage :scroll-at=".8"
+              defer-load
               src="/mood/Clippings.jpg" />
             <MoodImage orientation="landscape" :offset="20"
+              defer-load
               src="/mood/ZakJohnson-BekStone.jpg" />
             <MoodImage orientation="landscape" size="small"
+              defer-load
               src="/mood/Saintbek.png" />
           </div>
         </MoodSet>
@@ -164,10 +169,12 @@
         <MoodSet>
           <div slot="left">
             <MoodImage
+              defer-load
               src="/airbnb/Type-Scales.jpg"
               :scroll-at="1.2"
               :offset="80" />
             <MoodImage
+              defer-load
               src="/airbnb/DLS-Pacing.png"
               orientation="landscape"
               :scroll-at="1.2"
@@ -175,15 +182,18 @@
           </div>
           <div slot="right">
             <MoodImage
+              defer-load
               src="/airbnb/Airbnb-DLS-Brand.jpg"
               orientation="landscape"
               :scroll-at="0.9"
               :offset="10" />
             <MoodImage
+              defer-load
               src="/airbnb/DLS-Calendar.png"
               :scroll-at="1.1"
               :offset="0" />
             <MoodImage
+              defer-load
               src="/airbnb/DLS-Motion.gif"
               orientation="landscape"
               size="small"
@@ -242,10 +252,12 @@
         <MoodSet>
           <div slot="left">
             <MoodImage
+              defer-load
               src="/airbnb/Airbnb-2015-XD.jpg"
               :scroll-at="1.2"
               :offset="80" />
             <MoodImage
+              defer-load
               src="/airbnb/Karri-Saarinen.jpg"
               orientation="landscape"
               :scroll-at="1.2"
@@ -253,14 +265,17 @@
           </div>
           <div slot="right">
             <MoodImage
+              defer-load
               src="/airbnb/Airbnb-FutureIsFemale.jpg"
               orientation="landscape"
               :scroll-at="1.1" />
             <MoodImage
+              defer-load
               src="/airbnb/SalihTheDream.jpg"
               :scroll-at="0.9"
               :offset="-10" />
             <MoodImage
+              defer-load
               src="/airbnb/HowWeBuild.jpg"
               orientation="landscape"
               :offset="60" />
