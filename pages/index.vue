@@ -315,8 +315,9 @@
         <vue-marked>
           # Making and breaking
 
-          Highlights in humanizing digital experiences, constructing
-          environments, and exploring physical materials.
+          Highlights from humanizing brands and digital experiences,
+          constructing environments, and exploring physical forms and
+          materials.
         </vue-marked>
 
         <ImageViewer defer-load :images="[
@@ -324,6 +325,7 @@
           '/archive/Constellations.jpg',
           '/archive/Emboss.jpg',
           '/archive/Flytrap-Construction.jpg',
+          '/archive/Goflow-App.jpg',
           '/archive/NEU.jpg',
           '/archive/PressedJuicery.jpg',
           '/archive/TLE-3D-Mark.jpg',
@@ -334,12 +336,6 @@
 
       <NavSection name="voices" label="Voices">
         <vue-marked>
-          > An expert in her craft, a leader with humility, and someone you can
-          > always rely on to deliver innovative and fresh design perspectives.
-
-          [Adam Bordow](https://www.linkedin.com/in/adam-bordow-a513557/)  
-          *Photo Editor, Airbnb*
-
           > Bek is one of those rare leaders that boldly balances hands-on
           > relevancy with clear visioned execution.
 
@@ -351,6 +347,12 @@
 
           [Benjamin Roy](https://www.linkedin.com/in/beroy/)  
           *Director, Venture Visuals*
+
+          > An expert in her craft, a leader with humility, and someone you can
+          > always rely on to deliver innovative and fresh design perspectives.
+
+          [Adam Bordow](https://www.linkedin.com/in/adam-bordow-a513557/)  
+          *Photo Editor, Airbnb*
 
           > If I could get Bek on my team ever again I'd do so in a heartbeat.
 
