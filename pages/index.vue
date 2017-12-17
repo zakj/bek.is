@@ -135,7 +135,7 @@
           publicized rebrand six months prior had catapulted an
           already-valuable service into the “internet darling” stratosphere.
           2015 would usher in the company’s first significant investment in
-          global marketing, further extending it’s reach. Internally, teams
+          global marketing, further extending its reach. Internally, teams
           were working and growing at a feverish pace.
 
           By July, product design had more than doubled in size. Teams and
