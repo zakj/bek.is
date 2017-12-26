@@ -83,6 +83,8 @@ module.exports = {
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
 
+      {name: 'pinterest', content: 'nohover'},
+
       {name: 'description', content: META_DESCRIPTION},
       {property: 'og:type', content: 'website'},
       {property: 'og:url', content: 'https://bek.is/'},

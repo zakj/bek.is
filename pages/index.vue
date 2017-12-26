@@ -21,7 +21,7 @@
           <div slot="right">
             <MoodImage :offset="60"
               src="/mood/Cabin.jpg" />
-            <MoodImage orientation="landscape" size="small"
+            <MoodImage orientation="landscape" size="small" :nopin="true"
               src="/mood/Blocky.png" />
             <MoodImage orientation="landscape"
               src="/mood/Wing.jpg" />
@@ -31,7 +31,7 @@
             <MoodImage orientation="landscape" :offset="20"
               defer-load
               src="/mood/ZakJohnson-BekStone.jpg" />
-            <MoodImage orientation="landscape" size="small"
+            <MoodImage orientation="landscape" size="small" :nopin="true"
               defer-load
               src="/mood/Saintbek.png" />
           </div>

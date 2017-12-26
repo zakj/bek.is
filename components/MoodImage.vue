@@ -1,32 +1,29 @@
 <template>
-  <div
+  <img
     :class="[$style.image, $style[orientation], $style[size]]"
     :style="{
-      backgroundImage: ready ? `url(${src})` : 'none',
       transform: `translateY(${deltaY}px)`,
-      marginTop: `${Math.round(offset)}%`,
+      marginTop: `${offset}%`,
     }"
-    ></div>
+    :src="ready ? src : null"
+    :alt="alt"
+    :nopin="nopin ? 'nopin' : null"
+  >
 </template>
 
 <style lang="stylus" module>
   @require '~assets/util'
 
   .image
-    background-position center
-    background-size cover
+    pointer-events none
 
   .portrait.large
-    size-ratio(3, 4)
     width 110%
   .landscape.large
-    size-ratio(4, 3)
     width 130%
   .portrait.small
-    size-ratio(2, 3)
     width 50%
   .landscape.small
-    size-ratio(3, 2)
     width 90%
 </style>
 
@@ -82,6 +79,14 @@ export default {
   },
 
   props: {
+    alt: {
+      default: '',
+      type: String,
+    },
+    nopin: {
+      default: null,
+      type: Boolean,
+    },
     offset: {
       default: 0,
       type: Number,

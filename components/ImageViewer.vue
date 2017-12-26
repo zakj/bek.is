@@ -1,10 +1,11 @@
 <template>
   <div :class="$style.imageViewer">
-    <div
+    <!-- TODO: alt, nopin -->
+    <img
       v-for="(url, index) in images"
-      :class="[$style.image, {[$style.current]: index == currentIndex}]"
-      :style="{backgroundImage: ready ? `url(${url})` : 'none'}"
-      ></div>
+      :class="{[$style.current]: index == currentIndex}"
+      :src="ready ? url : null"
+    >
   </div>
 </template>
 
@@ -13,25 +14,21 @@
 
   .image-viewer
     position relative
+    size-ratio(16, 9)
     +below(tablet)
       margin 1.5em (mobile-padding * -1)
     +above(tablet)
       margin 2em 0
 
-  .image-viewer, .image
-    size-ratio(16, 9)
-
-  .image
-    background-position center
-    background-size cover
+  .image-viewer img
     opacity 0
+    pointer-events none
     position absolute
     top 0
     transition opacity 1s ease-in
     width 100%
-
-  .current
-    opacity 1
+    &.current
+      opacity 1
 </style>
 
 <script>
