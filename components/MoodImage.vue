@@ -21,7 +21,6 @@
     position relative
 
   .moodImage img
-    pointer-events none
     position absolute
     top 0
     width 100%

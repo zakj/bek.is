@@ -23,13 +23,13 @@
 
   .image-viewer img
     opacity 0
-    pointer-events none
     position absolute
     top 0
     transition opacity 1s ease-in
     width 100%
     &.current
       opacity 1
+      z-index 1
 </style>
 
 <script>
