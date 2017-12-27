@@ -1,29 +1,42 @@
 <template>
-  <img
-    :class="[$style.image, $style[orientation], $style[size]]"
+  <div
+    :class="[$style.moodImage, $style[orientation], $style[size]]"
     :style="{
       transform: `translateY(${deltaY}px)`,
       marginTop: `${offset}%`,
     }"
-    :src="ready ? src : null"
-    :alt="alt"
-    :nopin="nopin ? 'nopin' : null"
   >
+    <img
+      :src="ready ? src : null"
+      :alt="alt"
+      :nopin="nopin ? 'nopin' : null"
+    >
+  </div>
 </template>
 
 <style lang="stylus" module>
   @require '~assets/util'
 
-  .image
+  .moodImage
+    position relative
+
+  .moodImage img
     pointer-events none
+    position absolute
+    top 0
+    width 100%
 
   .portrait.large
+    size-ratio(3, 4)
     width 110%
   .landscape.large
+    size-ratio(4, 3)
     width 130%
   .portrait.small
+    size-ratio(2, 3)
     width 50%
   .landscape.small
+    size-ratio(3, 2)
     width 90%
 </style>
 
@@ -36,7 +49,7 @@ export default {
       return /iPhone/.test(navigator.userAgent);
     },
 
-    ...mapState(['scrollY']),
+    ...mapState(['loading', 'scrollY']),
   },
 
   data: () => ({
@@ -45,6 +58,10 @@ export default {
   }),
 
   watch: {
+    loading() {
+      requestAnimationFrame(this.scrollCheck);
+    },
+
     scrollY() {
       if (this.scrollAt !== 1) {
         cancelAnimationFrame(this.animationFrameId);
@@ -54,7 +71,7 @@ export default {
   },
 
   mounted() {
-    this.scrollCheck();
+    requestAnimationFrame(this.scrollCheck);
   },
 
   methods: {
