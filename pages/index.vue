@@ -8,32 +8,50 @@
           <div slot="left">
             <!-- offset is a percentage of the width of the column. -->
             <MoodImage :scroll-at="1.2"
-              src="/mood/BekStone.jpg" />
+              src="/mood/BekStone.jpg"
+              alt="Bek Stone → https://bek.is"
+            />
             <MoodImage :offset="-14" :scroll-at="1.2"
-              src="/mood/V7.jpg" />
+              src="/mood/V7.jpg"
+              alt="Moto Guzzi V7 Stone. Bek Stone → https://bek.is"
+            />
             <MoodImage :offset="80" :scroll-at="1.2"
               defer-load
-              src="/mood/Agave.jpg" />
+              src="/mood/Agave.jpg"
+              alt="Blue agave at Ganna Walska Lotusland. Bek Stone → https://bek.is"
+            />
             <MoodImage :offset="40" :scroll-at=".9"
               defer-load
-              src="/mood/Soiled.jpg" />
+              src="/mood/Soiled.jpg"
+              alt="Designing succulent gardens. Bek Stone → https://bek.is"
+            />
           </div>
           <div slot="right">
             <MoodImage :offset="60"
-              src="/mood/Cabin.jpg" />
+              src="/mood/Cabin.jpg"
+              alt="Cabin wax seal. Bek Stone → https://bek.is"
+            />
             <MoodImage orientation="landscape" size="small" :nopin="true"
-              src="/mood/Blocky.png" />
+              src="/mood/Blocky.png"
+            />
             <MoodImage orientation="landscape"
-              src="/mood/Wing.jpg" />
+              src="/mood/Wing.jpg"
+              alt="Beastie named Wing. Bek Stone → https://bek.is"
+            />
             <MoodImage :scroll-at=".8"
               defer-load
-              src="/mood/Clippings.jpg" />
+              src="/mood/Clippings.jpg"
+              alt="In bloom. Bek Stone → https://bek.is"
+            />
             <MoodImage orientation="landscape" :offset="20"
               defer-load
-              src="/mood/ZakJohnson-BekStone.jpg" />
+              src="/mood/ZakJohnson-BekStone.jpg"
+              alt="San Francisco rooftop with Zak Johnson and Bek Stone. https://bek.is"
+            />
             <MoodImage orientation="landscape" size="small" :nopin="true"
               defer-load
-              src="/mood/Saintbek.png" />
+              src="/mood/Saintbek.png"
+            />
           </div>
         </MoodSet>
       </NavSection>
@@ -122,7 +140,7 @@
         </vue-marked>
 
         <ImageViewer defer-load :images="[
-          '/airbnb/Airbnb-MMXV.jpg',
+          {src: '/airbnb/Airbnb-MMXV.jpg', alt: 'Airbnb MMXV. Bek Stone → https://bek.is'},
           ]" />
 
         <vue-marked>
@@ -149,7 +167,7 @@
         </vue-marked>
 
         <ImageViewer defer-load :images="[
-          '/airbnb/Airbnb-DLS-Founding-Team.jpg',
+          {src: '/airbnb/Airbnb-DLS-Founding-Team.jpg', alt: 'Airbnb Design Systems Team. Salih Abdul-Karim, Bek Stone, Michael Sui, Jing Jian. https://bek.is'},
           ]" />
 
         <vue-marked>
@@ -171,11 +189,13 @@
             <MoodImage
               defer-load
               src="/airbnb/Type-Scales.jpg"
+              alt="Airbnb type scales by Britt Nelson. Bek Stone → https://bek.is"
               :scroll-at="1.2"
               :offset="80" />
             <MoodImage
               defer-load
               src="/airbnb/DLS-Pacing.png"
+              alt="Airbnb app component system. Bek Stone → https://bek.is"
               orientation="landscape"
               :scroll-at="1.2"
               :offset="-10" />
@@ -184,17 +204,20 @@
             <MoodImage
               defer-load
               src="/airbnb/Airbnb-DLS-Brand.jpg"
+              alt="Airbnb Design Systems team. Michael Sui, Britt Nelson, Jing Jian. Bek Stone → https://bek.is"
               orientation="landscape"
               :scroll-at="0.9"
               :offset="10" />
             <MoodImage
               defer-load
               src="/airbnb/DLS-Calendar.png"
+              alt="Airbnb app date picker. Bek Stone → https://bek.is"
               :scroll-at="1.1"
               :offset="0" />
             <MoodImage
               defer-load
               src="/airbnb/DLS-Motion.gif"
+              alt="Airbnb in motion. https://bek.is"
               orientation="landscape"
               size="small"
               :scroll-at="1"
@@ -213,9 +236,9 @@
         </vue-marked>
 
         <ImageViewer defer-load :images="[
-          '/airbnb/Airbnb-DLS-Leads.jpg',
-          '/airbnb/Airbnb-DLS.jpg',
-          '/airbnb/Airbnb-DLS-Components.jpg',
+          {src: '/airbnb/Airbnb-DLS-Leads.jpg', alt: 'Airbnb Design Language System. Alex Schleifer, Bek Stone, Amber Cartwright, Adam Michela. https://bek.is'},
+          {src: '/airbnb/Airbnb-DLS.jpg', alt: 'Airbnb Design Language System. Brian Chesky, Joe Zadeh, Alex Schleifer, Bek Stone, Amber Cartwright. https://bek.is'},
+          {src: '/airbnb/Airbnb-DLS-Components.jpg', alt: 'Airbnb Design Language System. Alex Schleifer, Bek Stone, Amber Cartwright. https://bek.is'},
           ]" />
 
         <vue-marked>
@@ -254,11 +277,13 @@
             <MoodImage
               defer-load
               src="/airbnb/Airbnb-2015-XD.jpg"
+              alt="2015 Airbnb design team. Bek Stone → https://bek.is"
               :scroll-at="1.2"
               :offset="80" />
             <MoodImage
               defer-load
               src="/airbnb/Karri-Saarinen.jpg"
+              alt="Karri Saarinen in Wintercroft mask. https://wintercroft.com/"
               orientation="landscape"
               :scroll-at="1.2"
               :offset="-10" />
@@ -267,16 +292,19 @@
             <MoodImage
               defer-load
               src="/airbnb/Airbnb-FutureIsFemale.jpg"
+              alt="EPIC / Airbnb. Katie Dill, Bek Stone, Amber Cartwright. https://bek.is"
               orientation="landscape"
               :scroll-at="1.1" />
             <MoodImage
               defer-load
               src="/airbnb/SalihTheDream.jpg"
+              alt="Salih Abdul-Karim, master of motion."
               :scroll-at="0.9"
               :offset="-10" />
             <MoodImage
               defer-load
               src="/airbnb/HowWeBuild.jpg"
+              alt="Airbnb design team. Bek Stone → https://bek.is"
               orientation="landscape"
               :offset="60" />
           </div>
@@ -321,16 +349,16 @@
         </vue-marked>
 
         <ImageViewer defer-load :images="[
-          '/archive/BekStone-CastSilver.jpg',
-          '/archive/Constellations.jpg',
-          '/archive/Emboss.jpg',
-          '/archive/Flytrap-Construction.jpg',
-          '/archive/Goflow-App.jpg',
-          '/archive/NEU.jpg',
-          '/archive/PressedJuicery.jpg',
-          '/archive/TLE-3D-Mark.jpg',
-          '/archive/ThisIsBound.jpg',
-          '/archive/Workshop.jpg',
+          {src: '/archive/BekStone-CastSilver.jpg', alt: 'Cast silver. Bek Stone → https://bek.is'},
+          {src: '/archive/Constellations.jpg', alt: 'Constellations journal. Bek Stone → https://bek.is'},
+          {src: '/archive/Emboss.jpg', alt: 'TLE branding. Bek Stone → https://bek.is'},
+          {src: '/archive/Flytrap-Construction.jpg', alt: 'Making and breaking at the Flytrap. Bek Stone → https://bek.is'},
+          {src: '/archive/Goflow-App.jpg', alt: 'Goflow app design, icon and component system. Bek Stone → https://bek.is'},
+          {src: '/archive/NEU.jpg', alt: 'New Engineering University. Bek Stone → https://bek.is'},
+          {src: '/archive/PressedJuicery.jpg', alt: 'Pressed Juicery branding. Bek Stone → https://bek.is'},
+          {src: '/archive/TLE-3D-Mark.jpg', alt: '3D mark. Bek Stone → https://bek.is'},
+          {src: '/archive/ThisIsBound.jpg', alt: 'Leatherworking. Bek Stone → https://bek.is'},
+          {src: '/archive/Workshop.jpg', alt: 'Technical apparel design. Bek Stone → https://bek.is'},
           ]" />
       </NavSection>
 

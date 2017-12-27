@@ -2,9 +2,10 @@
   <div :class="$style.imageViewer">
     <!-- TODO: alt, nopin -->
     <img
-      v-for="(url, index) in images"
+      v-for="(image, index) in images"
       :class="{[$style.current]: index == currentIndex}"
-      :src="ready ? url : null"
+      :src="ready ? image.src : null"
+      :alt="image.alt"
     >
   </div>
 </template>
