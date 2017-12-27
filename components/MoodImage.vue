@@ -7,7 +7,7 @@
     }"
   >
     <img
-      :src="ready ? src : null"
+      :src="ready ? src : transparentImage"
       :alt="alt"
       :nopin="nopin ? 'nopin' : null"
     >
@@ -48,7 +48,7 @@ export default {
       return /iPhone/.test(navigator.userAgent);
     },
 
-    ...mapState(['loading', 'scrollY']),
+    ...mapState(['loading', 'scrollY', 'transparentImage']),
   },
 
   data: () => ({

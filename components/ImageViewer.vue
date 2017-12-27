@@ -4,7 +4,7 @@
     <img
       v-for="(image, index) in images"
       :class="{[$style.current]: index == currentIndex}"
-      :src="ready ? image.src : null"
+      :src="ready ? image.src : transparentImage"
       :alt="image.alt"
     >
   </div>
@@ -33,11 +33,15 @@
 </style>
 
 <script>
+import {mapState} from 'vuex';
+
 export default {
   data: () => ({
     currentIndex: 0,
     intervalId: null,
   }),
+
+  computed: mapState(['transparentImage']),
 
   methods: {
     incrementIndex() {
