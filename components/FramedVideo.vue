@@ -1,7 +1,11 @@
 <template>
   <div :class="$style.framedVideo">
-    <video loop muted playsinline :src="ready? src : null" ref="video"
-      v-in-view:enter="play" v-in-view:exit="pause">
+    <video
+      loop muted playsinline ref="video"
+      :src="ready ? src : null"
+      :poster="poster"
+      v-in-view:enter="play" v-in-view:exit="pause"
+    >
     </video>
   </div>
 </template>
@@ -47,6 +51,10 @@ export default {
   },
 
   props: {
+    poster: {
+      type: String,
+      default: null,
+    },
     src: {
       type: String,
       required: true,

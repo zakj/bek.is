@@ -250,7 +250,11 @@
           integration, and continued evolution across product teams.
         </vue-marked>
 
-        <FramedVideo src="https://s3.us-west-2.amazonaws.com/bek-is/Airbnb-DLS-Components-Demo.mp4" defer-load />
+        <FramedVideo
+          src="https://s3.us-west-2.amazonaws.com/bek-is/Airbnb-DLS-Components-Demo.mp4"
+          defer-load
+          poster="/airbnb/Loading.gif"
+        />
 
         <vue-marked>
           As with any great endeavor, this one too had to travel the difficult
