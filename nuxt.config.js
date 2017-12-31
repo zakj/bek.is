@@ -1,4 +1,4 @@
-const META_DESCRIPTION = "I'm Bek Stone, an advisor, creative director, and maker and breaker of things.";
+const META_DESCRIPTION = 'Bek Stone, veteran product and design director. People first and always.';
 
 const LINT_ON_BUILD = false;
 

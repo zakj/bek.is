@@ -60,7 +60,7 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, an advisor and creative director. I build and care for
+          I’m Bek Stone, a veteran product and design director. I build and care for
           extraordinary teams and lead them in the creation of products both
           new to market and loved by millions.
 
@@ -112,7 +112,7 @@
 
           Iterative feedback and collaboration directly equate to product
           quality. Ask hard questions, find the holes, swap files, and gain new
-          perspectives. Use tooling and prototyping to address issues early on
+          perspectives. Use prototyping and testing to address issues early on
           and illuminate new opportunities.
 
           ## Redefine the bar
