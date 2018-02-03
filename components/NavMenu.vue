@@ -50,6 +50,7 @@
     position relative
   .logo, .toggle
     position absolute
+    z-index 1
     -webkit-tap-highlight-color transparent
     +below(tablet)
       top mobile-padding
