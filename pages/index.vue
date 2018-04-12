@@ -60,9 +60,9 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, a veteran product and design director. I build and care for
-          extraordinary teams and lead them in the creation of products both
-          new to market and loved by millions.
+          I’m Bek Stone, a veteran brand and product designer. I help build
+          extraordinary businesses, leading teams in the creation of products
+          both new to market and loved by millions.
 
           For the last decade, systems thinking has woven its way through all I
           do, trading friction for efficiency. Strategy and an eye for the
@@ -326,7 +326,7 @@
           Katie Dill, Amber Cartwright, Allen Mask, Taido Nakajima, Katie Chen,
           Adam Glynn-Finnegan, Kevin Grennan, Alvin Hsia, Shane Allen, Charlie
           Aufmann.
-          
+
           ## Related articles
 
           [A Design System to Take on the World](http://www.creativebloq.com/features/why-design-is-key-to-airbnbs-incredible-success)  
@@ -380,16 +380,26 @@
           [Benjamin Roy](https://www.linkedin.com/in/beroy/)  
           *Director, Venture Visuals*
 
-          > An expert in her craft, a leader with humility, and someone you can
-          > always rely on to deliver innovative and fresh design perspectives.
+          > At Airbnb, Bek took on some of the hardest design and business
+          > problems using her skills to get everyone, from the CEO to her
+          > engineering counterparts bought in.
 
-          [Adam Bordow](https://www.linkedin.com/in/adam-bordow-a513557/)  
-          *Photo Editor, Airbnb*
+          [Kevin Grennan](https://www.linkedin.com/in/kevingrennan/)  
+          *Design, Sidewalk Labs*
 
-          > If I could get Bek on my team ever again I'd do so in a heartbeat.
+          > As magnetic as she is humble, Bek rallies teams to solve problems
+          > with systems thinking, minimalism, curiosity, and diagrams of
+          > happiness curves.
 
-          [Dan Hill](https://www.linkedin.com/in/hilldan/)  
-          *Director of Product, Airbnb*
+          [Michael Austin Sui](https://www.linkedin.com/in/michaelsui/)  
+          *Inclusive Design Lead, Airbnb*
+
+          > Bek is just one of the most well-rounded, human-centric, passionate
+          > leaders you’ll meet. She inspires people to be better — that’s her
+          > superpower.
+
+          [Jing Jian](https://www.linkedin.com/in/jing-jian-84b3b139/)  
+          *Experience Design Lead, Airbnb*
         </vue-marked>
       </NavSection>
 
