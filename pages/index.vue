@@ -64,16 +64,15 @@
           firm in San Francisco helping entrepreneurs establish design as an
           early competitive advantage.
 
-          For nearly two decades I've helped build extraordinary businesses,
-          leading the creation of brands and products both new to market and
-          loved by millions. I thrive in ambiguity—defining strategy, brand
-          expression, and the technical and organizational systems that bring
-          efficiency as companies evolve and scale.
+          I've spent my career helping build extraordinary businesses, both
+          new to market and loved by millions. I'm drawn to the earliest
+          stages of company creation—defining strategy, brand expression, and
+          the systems necessary to evolve and scale.
 
-          Today, I've joined the ranks of a small number of women in venture
-          serving the next wave of entrepreneurs. I'm passionate about
-          equality and partnership, and motivated to help the full spectrum
-          of underrepresented founders gain access to funding and support.
+          Today, I work alongside amazing partners to serve a new wave of
+          entrepreneurs. I'm passionate about equality and partnership, and
+          motivated to help the full spectrum of underrepresented founders
+          gain access to funding and support.
 
           I live in Oakland with my partner [Zak][], a ridiculous [beastie][],
           and an army of [plant babies][]. When not rocking business pants, I
