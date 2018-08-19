@@ -1,4 +1,4 @@
-const META_DESCRIPTION = 'Bek Stone, veteran product and design director. People first and always.';
+const META_DESCRIPTION = "Bek Stone—matchmaker, music player, adventure-lovin' cocktail shaker.";
 
 const LINT_ON_BUILD = false;
 

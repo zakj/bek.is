@@ -60,22 +60,27 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, a veteran brand and product designer. I help build
-          extraordinary businesses, leading teams in the creation of products
-          both new to market and loved by millions.
+          I’m Bek Stone, partner and design chief at [Combine][], a venture
+          firm in San Francisco helping entrepreneurs establish design as an
+          early competitive advantage.
 
-          For the last decade, systems thinking has woven its way through all I
-          do, trading friction for efficiency. Strategy and an eye for the
-          iconic help me shepherd brands to a space uniquely their own. Above
-          all are people—saturating this wild ride with endless inspiration.
-          Fostering great talent, advocating the quest for fulfillment, and
-          rallying the whole lot to work together is pure delight.
+          For nearly two decades I've helped build extraordinary businesses,
+          leading the creation of brands and products both new to market and
+          loved by millions. I thrive in ambiguity—defining strategy, brand
+          expression, and the technical and organizational systems that bring
+          efficiency as companies evolve and scale.
+
+          Today, I've joined the ranks of a small number of women in venture
+          serving the next wave of entrepreneurs. I'm passionate about
+          equality and partnership, and motivated to help the full spectrum
+          of underrepresented founders gain access to funding and support.
 
           I live in Oakland with my partner [Zak][], a ridiculous [beastie][],
           and an army of [plant babies][]. When not rocking business pants, I
           can be found composing [music][], designing [jewelry and apparel][],
           or carving through the Redwoods on a Moto Guzzi named [Fusa][].
 
+          [Combine]: http://combine.vc/
           [Zak]: https://zakj.net/
           [beastie]: https://www.instagram.com/p/BNsYAKejaIY/?taken-by=saintbek
           [plant babies]: https://www.instagram.com/p/BUF4y6iBK4m/?taken-by=saintbek
