@@ -12,7 +12,7 @@
               alt="Bek Stone → https://bek.is"
             />
             <MoodImage :offset="-14" :scroll-at="1.2"
-              src="/mood/V7.jpg"
+              src="/mood/Fusa.jpg"
               alt="Moto Guzzi V7 Stone. Bek Stone → https://bek.is"
             />
             <MoodImage :offset="80" :scroll-at="1.2"
@@ -60,32 +60,30 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, partner and design chief at [Combine][], a venture
-          firm in San Francisco helping entrepreneurs establish design as an
-          early competitive advantage.
+          I’m Bek Stone, veteran designer, musician, and entrepreneur
+          passionate about equality and social progress.
 
-          I've spent my career helping build extraordinary businesses, both
-          new to market and loved by millions. I'm drawn to the earliest
-          stages of company creation—defining strategy, brand expression, and
-          the systems necessary to evolve and scale.
+          I’ve spent my career helping build businesses, both new to market
+          and loved by millions. I’m drawn to the earliest stages of company
+          creation—defining strategy, brand expression, and the teams and
+          systems necessary to evolve and scale.
 
-          Today, I work alongside amazing partners to serve a new wave of
-          entrepreneurs. I'm passionate about equality and partnership, and
-          motivated to help the full spectrum of underrepresented founders
-          gain access to funding and support.
+          Today, I work alongside amazing partners to build new businesses
+          and encourage and support a growing wave of underrepresented
+          founders.
 
-          I live in Oakland with my partner [Zak][], a ridiculous [beastie][],
-          and an army of [plant babies][]. When not rocking business pants, I
-          can be found composing [music][], designing [jewelry and apparel][],
-          or carving through the Redwoods on a Moto Guzzi named [Fusa][].
+          I live in Oakland with my partner [Zak][], a ridiculous
+          [beastie][], and an army of [plant babies][]. When not rocking
+          business pants, I can be found composing [music][], designing
+          [jewelry and apparel][], or carving through the Redwoods on a Moto
+          Guzzi named [Fusa][].
 
-          [Combine]: http://combine.vc/
           [Zak]: https://zakj.net/
-          [beastie]: https://www.instagram.com/p/BNsYAKejaIY/?taken-by=saintbek
-          [plant babies]: https://www.instagram.com/p/BUF4y6iBK4m/?taken-by=saintbek
-          [music]: https://www.instagram.com/p/osFE-qNznI/?taken-by=saintbek
+          [beastie]: https://www.instagram.com/p/Ba64EdLBlmG/
+          [plant babies]: https://www.instagram.com/p/BkB9XLGlRon/
+          [music]: https://stone.mu/
           [jewelry and apparel]: https://www.instagram.com/p/Bca2HvWhgkc/?taken-by=saintbek
-          [Fusa]: https://www.instagram.com/p/BadE2jXBQOz/?taken-by=saintbek
+          [Fusa]: https://www.instagram.com/p/BnSclCqFArD/
         </vue-marked>
       </NavSection>
 
@@ -403,7 +401,7 @@
           > superpower.
 
           [Jing Jian](https://www.linkedin.com/in/jing-jian-84b3b139/)  
-          *Experience Design Lead, Airbnb*
+          *Design Lead, Motion*
         </vue-marked>
       </NavSection>
 
