@@ -3,6 +3,7 @@
     <div :class="$style.overlay" ref="overlay">
       <Container :class="$style.nav">
         <a v-for="({name, label}) in mainSections"
+          :key="name"
           :class="$style.link"
           @click="open = false"
           :href="`#${name}`" v-scroll-to="`#${name}`">{{label}}</a>
