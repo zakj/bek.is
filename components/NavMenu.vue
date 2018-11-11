@@ -68,8 +68,13 @@
     +above(tablet)
       left tablet-padding
     svg
+      hover-padding = 4px
+      box-sizing content-box
       height logo-size
+      margin-left hover-padding * -1
+      margin-top hover-padding * -1
       overflow visible
+      padding hover-padding
       transform scale(0)
       width logo-size
       &.filled :global #mark-background
