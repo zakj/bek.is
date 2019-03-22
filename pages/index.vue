@@ -60,17 +60,17 @@
         <vue-marked>
           # Hiya.
 
-          I’m Bek Stone, veteran designer, musician, and entrepreneur
-          passionate about equality and social progress.
+          I’m Bek Stone, a veteran designer, musician, and entrepreneur deeply
+          passionate about people.
 
           I’ve spent my career helping build businesses, both new to market
-          and loved by millions. I’m drawn to the earliest stages of company
-          creation—defining strategy, brand expression, and the teams and
-          systems necessary to evolve and scale.
+          and loved by millions. I’m drawn to the earliest stages of
+          creation—discovering needs, business strategy, brand expression,
+          and the teams and systems necessary to gracefully evolve and scale.
 
-          Today, I work alongside amazing partners to build new businesses
-          and encourage and support a growing wave of underrepresented
-          founders.
+          I value empathy and candor, simplifying the complex, serving the
+          underdog, and perpetually learning and accomplishing amazing feats
+          with other hungry hearts and minds.
 
           I live in Oakland with my partner [Zak][], a ridiculous
           [beastie][], and an army of [plant babies][]. When not rocking
