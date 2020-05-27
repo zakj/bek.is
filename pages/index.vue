@@ -35,8 +35,8 @@
               src="/mood/Blocky.png"
             />
             <MoodImage orientation="landscape"
-              src="/mood/Wing.jpg"
-              alt="Beastie named Wing. Bek Stone → https://bek.is"
+              src="/mood/WFH.jpg"
+              alt="The Chapel. Bek Stone → https://bek.is"
             />
             <MoodImage :scroll-at=".8"
               defer-load
@@ -45,8 +45,8 @@
             />
             <MoodImage orientation="landscape" :offset="20"
               defer-load
-              src="/mood/ZakJohnson-BekStone.jpg"
-              alt="San Francisco rooftop with Zak Johnson and Bek Stone. https://bek.is"
+              src="/mood/BekStone-music.jpg"
+              alt="Songs in Em. https://bek.is"
             />
             <MoodImage orientation="landscape" size="small" :nopin="true"
               defer-load
@@ -72,14 +72,11 @@
           underdog, and perpetually learning and accomplishing amazing feats
           with other hungry hearts and minds.
 
-          I live in Oakland with my partner [Zak][], a ridiculous
-          [beastie][], and an army of [plant babies][]. When not rocking
-          business pants, I can be found composing [music][], designing
-          [jewelry and apparel][], or carving through the Redwoods on a Moto
-          Guzzi named [Fusa][].
+          I live in Oakland with an army of [plant babies][]. When not
+          rocking business pants, I can be found composing [music][],
+          designing [jewelry and apparel][], or carving through the Redwoods
+          on a Moto Guzzi named [Fusa][].
 
-          [Zak]: https://zakj.net/
-          [beastie]: https://www.instagram.com/p/Ba64EdLBlmG/
           [plant babies]: https://www.instagram.com/p/BkB9XLGlRon/
           [music]: https://stone.mu/
           [jewelry and apparel]: https://www.instagram.com/p/Bca2HvWhgkc/?taken-by=saintbek
